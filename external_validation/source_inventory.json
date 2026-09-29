@@ -1,0 +1,69 @@
+{
+  "investigation_date": "2026-09-27",
+  "aoi": {
+    "longitude_min": -99.202418,
+    "longitude_max": -98.952350,
+    "latitude_min": 19.250885,
+    "latitude_max": 19.500420,
+    "source": "mintpy_redundant/inputs/geometryGeo.h5 transformed from EPSG:32614"
+  },
+  "sources": [
+    {
+      "organization": "INEGI",
+      "resource": "Subsidence Detected with Satellite Techniques",
+      "url": "https://www.inegi.org.mx/temas/subsidencia/",
+      "finding": "Official GeoTIFF products are Sentinel-1 PSI-derived and therefore not independent of Sentinel-1. The closest identified Mexico City product is the 2019 velocity/hundimiento raster, 30 m, ITRF2008 epoch 2010.0, catalog UPC 889463849650.",
+      "geometry": "combined ascending and descending Sentinel-1 to estimate vertical displacement",
+      "independence": "not independent SAR evidence"
+    },
+    {
+      "organization": "INEGI",
+      "resource": "Mexico City 2019 subsidence raster catalog",
+      "url": "https://www.inegi.org.mx/app/biblioteca/ficha.html?upc=889463849650",
+      "finding": "Coverage 98.8–99.25 W and 19.15–19.65 N; 2019; GeoTIFF; 30 m; values described as millimetres/year.",
+      "independence": "Sentinel-1-derived; useful only as historical/spatial-pattern comparison"
+    },
+    {
+      "organization": "INEGI",
+      "resource": "MOGEZOD",
+      "url": "https://www.inegi.org.mx/programas/mogezod/",
+      "finding": "Five-year geodetic-deformation monitoring using GNSS and SAR, focused on tectonic/seismic deformation. No downloadable 2024 Mexico City subsidence raster or station time-series product was identified.",
+      "independence": "mixed GNSS/SAR program; product-specific provenance required"
+    },
+    {
+      "organization": "INEGI",
+      "resource": "RGNA RINEX",
+      "url": "https://www.inegi.org.mx/app/geo2/rgna/",
+      "finding": "RINEX 2.11/3.04; hourly 15-second files and daily 30-second RINEX 2.11. ICMX is explicitly unavailable until further notice because interference produces low-quality data; TOL2 is the nearest usable RGNA station outside the AOI.",
+      "independence": "independent raw GNSS"
+    },
+    {
+      "organization": "NOAA NGS",
+      "resource": "All CORS sites and data products",
+      "url": "https://geodesy.noaa.gov/CORS/sort_sites.shtml",
+      "finding": "MMX1 Mexico City WAAS is continuous from GPS day 2008:116, nominal 1-second recent sampling decimated to 30 seconds after 30 days; 2024 raw RINEX is available. TOL2 is listed at 15-second recent sampling.",
+      "independence": "independent raw GNSS"
+    },
+    {
+      "organization": "Nevada Geodetic Laboratory",
+      "resource": "Plug and Play GPS final solutions",
+      "url": "https://geodesy.unr.edu/PlugNPlayPortal.php",
+      "finding": "Daily IGS20 and North-America-frame processed ENU time series are available in tenv3 ASCII. NGL DataHoldings was filtered over an AOI plus regional buffer; actual 2024 counts were checked for ICMX, MMX1, MXTO, MXTX, and TOL2.",
+      "independence": "independent GNSS observations processed by NGL"
+    },
+    {
+      "organization": "USGS",
+      "resource": "GNSS Data Sources",
+      "url": "https://earthquake.usgs.gov/monitoring/gps/sources.php",
+      "finding": "USGS identifies Mexican GNSS data providers but no USGS-operated continuous station or 2024 Mexico City displacement product was found for this AOI.",
+      "independence": "no directly usable local product identified"
+    }
+  ],
+  "availability_summary": {
+    "stations_inside_aoi_with_2024_processed_ENU": ["ICMX", "MMX1"],
+    "nearby_stations_with_2024_processed_ENU": ["MXTO", "MXTX", "TOL2"],
+    "daily_solution_counts_2024": {"ICMX": 362, "MMX1": 137, "MXTO": 356, "MXTX": 356, "TOL2": 366},
+    "sufficient_to_test_east_west_gradient": false,
+    "reason": "Only two stations fall inside the 26-by-28 km AOI; MMX1 is incomplete in 2024, and the out-of-AOI stations do not sample the interior east-west field densely enough."
+  }
+}

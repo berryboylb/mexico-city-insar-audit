@@ -1,0 +1,3074 @@
+{
+ "generated_utc": "2026-09-27T21:21:29+00:00",
+ "question": "Does independent GNSS favour the original long-wavelength InSAR gradient (no ramp) or the linear-ramp-removed result?",
+ "sources": {
+  "tenv3": {
+   "ICMX": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/ICMX.tenv3",
+   "MMX1": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/MMX1.tenv3",
+   "MXTX": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/MXTX.tenv3",
+   "MXTO": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/MXTO.tenv3",
+   "TOL2": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/TOL2.tenv3"
+  },
+  "steps": "https://geodesy.unr.edu/NGLStationPages/steps.txt",
+  "steps_sha256": "550ee4f3f60a9ce546dc187bd94a84d3644741207ad2e95b3de3cc1e985da9fa",
+  "retrieved": {
+   "tenv3": "2026-09-27 (file mtime 22:06 local); server Content-Length re-checked 2026-09-27T21:14Z, identical",
+   "steps": "2026-09-27T21:14:33Z"
+  }
+ },
+ "icmx_quality_warning": "INEGI RGNA currently states ICMX data are unavailable until further notice because interference generates low-quality observations (https://www.inegi.org.mx/app/geo2/rgna/). Treated as an unquantified systematic risk; see reliability and stress test.",
+ "qc": {
+  "ICMX": {
+   "source_url": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/ICMX.tenv3",
+   "retrieved": "2026-09-27 (file mtime 22:06 local); server Content-Length re-checked 2026-09-27T21:14Z, identical",
+   "sha256": "46b4e077850b51a2e5a55a29ee01c358e5191c7dd60897fd3465060e04474259",
+   "bytes": 594252,
+   "format": "NGL tenv3 ASCII, daily 24-h final solutions",
+   "reference_frame": "IGS20 (NGL tenv3/IGS20 directory)",
+   "units": "metres (positions and formal sigmas); ENU relative to NGL reference position; east/north/up positive",
+   "position_definition": "_e0+__east, n0+_north, u0+__up (integer+fractional parts summed)",
+   "antenna_heights_2024_m": [
+    0.235
+   ],
+   "reflon_2024": [
+    -99.2
+   ],
+   "full_start": "2017-07-30",
+   "full_end": "2026-01-10",
+   "full_count": 2912,
+   "start_2024": "2024-01-01",
+   "end_2024": "2024-12-31",
+   "count_2024": 362,
+   "cleaned_count_2024": 362,
+   "excluded": [],
+   "duplicate_dates": [],
+   "gaps": [
+    {
+     "after": "2024-09-17",
+     "before": "2024-09-19",
+     "missing_days": 1
+    },
+    {
+     "after": "2024-09-27",
+     "before": "2024-09-29",
+     "missing_days": 1
+    },
+    {
+     "after": "2024-12-26",
+     "before": "2024-12-29",
+     "missing_days": 2
+    }
+   ],
+   "longest_gap_days": 2,
+   "outlier_thresholds_mm": {
+    "east_m": 9.896143324977857,
+    "north_m": 10.731888893712311,
+    "up_m": 32.37975680979289
+   },
+   "jump_candidates": [],
+   "ngl_steps_all": [
+    {
+     "date": "2021-05-13",
+     "type": "equipment",
+     "description": "Antenna_Type_Changed"
+    },
+    {
+     "date": "2021-05-13",
+     "type": "equipment",
+     "description": "Receiver_Make_and_Model_Changed"
+    },
+    {
+     "date": "2017-09-08",
+     "type": "earthquake",
+     "threshold_distance_km": 2041.738,
+     "distance_km": 742.2,
+     "magnitude": 8.2,
+     "event_id": "us2000ahv0"
+    },
+    {
+     "date": "2017-09-19",
+     "type": "earthquake",
+     "threshold_distance_km": 575.44,
+     "distance_km": 119.16,
+     "magnitude": 7.1,
+     "event_id": "us2000ar20"
+    },
+    {
+     "date": "2018-02-16",
+     "type": "earthquake",
+     "threshold_distance_km": 645.654,
+     "distance_km": 358.729,
+     "magnitude": 7.2,
+     "event_id": "us2000d3km"
+    },
+    {
+     "date": "2020-06-23",
+     "type": "earthquake",
+     "threshold_distance_km": 812.831,
+     "distance_km": 515.222,
+     "magnitude": 7.4,
+     "event_id": "us6000ah9t"
+    },
+    {
+     "date": "2021-09-08",
+     "type": "earthquake",
+     "threshold_distance_km": 512.861,
+     "distance_km": 280.274,
+     "magnitude": 7.0,
+     "event_id": "us7000f93v"
+    },
+    {
+     "date": "2022-09-19",
+     "type": "earthquake",
+     "threshold_distance_km": 1023.293,
+     "distance_km": 411.91,
+     "magnitude": 7.6,
+     "event_id": "us7000i9bw"
+    }
+   ],
+   "ngl_steps_2023_12_to_2025_01": [],
+   "median_sigma_mm": {
+    "e": 0.9840000000000001,
+    "n": 0.85,
+    "u": 3.856
+   }
+  },
+  "MMX1": {
+   "source_url": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/MMX1.tenv3",
+   "retrieved": "2026-09-27 (file mtime 22:06 local); server Content-Length re-checked 2026-09-27T21:14Z, identical",
+   "sha256": "835b4a167d35dbf89ce522ffc51d638ae885e65c3c05484e22dda4e552584d21",
+   "bytes": 1203396,
+   "format": "NGL tenv3 ASCII, daily 24-h final solutions",
+   "reference_frame": "IGS20 (NGL tenv3/IGS20 directory)",
+   "units": "metres (positions and formal sigmas); ENU relative to NGL reference position; east/north/up positive",
+   "position_definition": "_e0+__east, n0+_north, u0+__up (integer+fractional parts summed)",
+   "antenna_heights_2024_m": [
+    0.0
+   ],
+   "reflon_2024": [
+    -99.1
+   ],
+   "full_start": "2008-04-26",
+   "full_end": "2026-09-12",
+   "full_count": 5898,
+   "start_2024": "2024-04-16",
+   "end_2024": "2024-10-10",
+   "count_2024": 137,
+   "cleaned_count_2024": 133,
+   "excluded": [
+    {
+     "date": "2024-08-16",
+     "exclusion_reason": "east_m_detrended_residual_-13.22mm_gt_11.11mm"
+    },
+    {
+     "date": "2024-08-28",
+     "exclusion_reason": "east_m_detrended_residual_+12.52mm_gt_11.11mm"
+    },
+    {
+     "date": "2024-08-30",
+     "exclusion_reason": "east_m_detrended_residual_-13.19mm_gt_11.11mm"
+    },
+    {
+     "date": "2024-09-09",
+     "exclusion_reason": "east_m_detrended_residual_-13.77mm_gt_11.11mm"
+    }
+   ],
+   "duplicate_dates": [],
+   "gaps": [
+    {
+     "after": "2024-04-18",
+     "before": "2024-05-01",
+     "missing_days": 12
+    },
+    {
+     "after": "2024-05-21",
+     "before": "2024-05-24",
+     "missing_days": 2
+    },
+    {
+     "after": "2024-06-12",
+     "before": "2024-06-14",
+     "missing_days": 1
+    },
+    {
+     "after": "2024-06-23",
+     "before": "2024-06-28",
+     "missing_days": 4
+    },
+    {
+     "after": "2024-07-01",
+     "before": "2024-07-15",
+     "missing_days": 13
+    },
+    {
+     "after": "2024-07-15",
+     "before": "2024-07-17",
+     "missing_days": 1
+    },
+    {
+     "after": "2024-07-24",
+     "before": "2024-07-28",
+     "missing_days": 3
+    },
+    {
+     "after": "2024-07-28",
+     "before": "2024-07-31",
+     "missing_days": 2
+    },
+    {
+     "after": "2024-09-01",
+     "before": "2024-09-04",
+     "missing_days": 2
+    },
+    {
+     "after": "2024-09-19",
+     "before": "2024-09-21",
+     "missing_days": 1
+    }
+   ],
+   "longest_gap_days": 13,
+   "outlier_thresholds_mm": {
+    "east_m": 11.10911560951863,
+    "north_m": 13.658662994764745,
+    "up_m": 30.214159455963273
+   },
+   "jump_candidates": [
+    {
+     "component": "east_m",
+     "date_before": "2024-08-15",
+     "date_after": "2024-08-16",
+     "jump_mm": -12.94000000007145,
+     "threshold_mm": 12.347092794446507,
+     "persistent_offset_mm_10d_means": 0.18274444437338389
+    },
+    {
+     "component": "east_m",
+     "date_before": "2024-08-16",
+     "date_after": "2024-08-17",
+     "jump_mm": 16.15700000002107,
+     "threshold_mm": 12.347092794446507,
+     "persistent_offset_mm_10d_means": 0.7774222221996752
+    },
+    {
+     "component": "east_m",
+     "date_before": "2024-08-29",
+     "date_after": "2024-08-30",
+     "jump_mm": -13.77600000023449,
+     "threshold_mm": 12.347092794446507,
+     "persistent_offset_mm_10d_means": 0.09761904721017345
+    },
+    {
+     "component": "east_m",
+     "date_before": "2024-08-30",
+     "date_after": "2024-08-31",
+     "jump_mm": 13.097999999899912,
+     "threshold_mm": 12.347092794446507,
+     "persistent_offset_mm_10d_means": -0.04571428598865168
+    },
+    {
+     "component": "east_m",
+     "date_before": "2024-09-08",
+     "date_after": "2024-09-09",
+     "jump_mm": -14.59500000009939,
+     "threshold_mm": 12.347092794446507,
+     "persistent_offset_mm_10d_means": -0.14306349203252466
+    }
+   ],
+   "ngl_steps_all": [
+    {
+     "date": "2011-12-11",
+     "type": "earthquake",
+     "threshold_distance_km": 288.403,
+     "distance_km": 177.763,
+     "magnitude": 6.5,
+     "event_id": "usp000jc1y"
+    },
+    {
+     "date": "2012-03-20",
+     "type": "earthquake",
+     "threshold_distance_km": 812.831,
+     "distance_km": 338.552,
+     "magnitude": 7.4,
+     "event_id": "usp000jghj"
+    },
+    {
+     "date": "2014-04-18",
+     "type": "earthquake",
+     "threshold_distance_km": 645.654,
+     "distance_km": 302.534,
+     "magnitude": 7.2,
+     "event_id": "usb000pq41"
+    },
+    {
+     "date": "2017-09-08",
+     "type": "earthquake",
+     "threshold_distance_km": 2041.738,
+     "distance_km": 735.924,
+     "magnitude": 8.2,
+     "event_id": "us2000ahv0"
+    },
+    {
+     "date": "2017-09-19",
+     "type": "earthquake",
+     "threshold_distance_km": 575.44,
+     "distance_km": 115.447,
+     "magnitude": 7.1,
+     "event_id": "us2000ar20"
+    },
+    {
+     "date": "2018-02-16",
+     "type": "earthquake",
+     "threshold_distance_km": 645.654,
+     "distance_km": 357.796,
+     "magnitude": 7.2,
+     "event_id": "us2000d3km"
+    },
+    {
+     "date": "2020-06-23",
+     "type": "earthquake",
+     "threshold_distance_km": 812.831,
+     "distance_km": 510.444,
+     "magnitude": 7.4,
+     "event_id": "us6000ah9t"
+    },
+    {
+     "date": "2021-09-08",
+     "type": "earthquake",
+     "threshold_distance_km": 512.861,
+     "distance_km": 285.642,
+     "magnitude": 7.0,
+     "event_id": "us7000f93v"
+    },
+    {
+     "date": "2022-09-19",
+     "type": "earthquake",
+     "threshold_distance_km": 1023.293,
+     "distance_km": 423.036,
+     "magnitude": 7.6,
+     "event_id": "us7000i9bw"
+    }
+   ],
+   "ngl_steps_2023_12_to_2025_01": [],
+   "median_sigma_mm": {
+    "e": 0.853,
+    "n": 0.735,
+    "u": 3.247
+   }
+  },
+  "MXTX": {
+   "source_url": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/MXTX.tenv3",
+   "retrieved": "2026-09-27 (file mtime 22:06 local); server Content-Length re-checked 2026-09-27T21:14Z, identical",
+   "sha256": "16710cc90a5f87a5742247e9ee75f7e147e74fd684979dea52ad98b61f354972",
+   "bytes": 395556,
+   "format": "NGL tenv3 ASCII, daily 24-h final solutions",
+   "reference_frame": "IGS20 (NGL tenv3/IGS20 directory)",
+   "units": "metres (positions and formal sigmas); ENU relative to NGL reference position; east/north/up positive",
+   "position_definition": "_e0+__east, n0+_north, u0+__up (integer+fractional parts summed)",
+   "antenna_heights_2024_m": [
+    0.0
+   ],
+   "reflon_2024": [
+    -98.9
+   ],
+   "full_start": "2019-08-22",
+   "full_end": "2025-02-04",
+   "full_count": 1938,
+   "start_2024": "2024-01-01",
+   "end_2024": "2024-12-31",
+   "count_2024": 356,
+   "cleaned_count_2024": 356,
+   "excluded": [],
+   "duplicate_dates": [],
+   "gaps": [
+    {
+     "after": "2024-10-12",
+     "before": "2024-10-23",
+     "missing_days": 10
+    }
+   ],
+   "longest_gap_days": 10,
+   "outlier_thresholds_mm": {
+    "east_m": 15.619372201442001,
+    "north_m": 21.453113341983407,
+    "up_m": 27.493805228087606
+   },
+   "jump_candidates": [],
+   "ngl_steps_all": [
+    {
+     "date": "2020-06-23",
+     "type": "earthquake",
+     "threshold_distance_km": 812.831,
+     "distance_km": 507.272,
+     "magnitude": 7.4,
+     "event_id": "us6000ah9t"
+    },
+    {
+     "date": "2021-09-08",
+     "type": "earthquake",
+     "threshold_distance_km": 512.861,
+     "distance_km": 302.839,
+     "magnitude": 7.0,
+     "event_id": "us7000f93v"
+    },
+    {
+     "date": "2022-09-19",
+     "type": "earthquake",
+     "threshold_distance_km": 1023.293,
+     "distance_km": 445.554,
+     "magnitude": 7.6,
+     "event_id": "us7000i9bw"
+    }
+   ],
+   "ngl_steps_2023_12_to_2025_01": [],
+   "median_sigma_mm": {
+    "e": 0.794,
+    "n": 0.7145,
+    "u": 2.976
+   }
+  },
+  "MXTO": {
+   "source_url": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/MXTO.tenv3",
+   "retrieved": "2026-09-27 (file mtime 22:06 local); server Content-Length re-checked 2026-09-27T21:14Z, identical",
+   "sha256": "001ebc8ade9a291d23f208d33f4699a3da2aeb17bd281d488da983b9dc93c107",
+   "bytes": 571608,
+   "format": "NGL tenv3 ASCII, daily 24-h final solutions",
+   "reference_frame": "IGS20 (NGL tenv3/IGS20 directory)",
+   "units": "metres (positions and formal sigmas); ENU relative to NGL reference position; east/north/up positive",
+   "position_definition": "_e0+__east, n0+_north, u0+__up (integer+fractional parts summed)",
+   "antenna_heights_2024_m": [
+    0.0
+   ],
+   "reflon_2024": [
+    -99.6
+   ],
+   "full_start": "2017-02-02",
+   "full_end": "2025-02-04",
+   "full_count": 2801,
+   "start_2024": "2024-01-01",
+   "end_2024": "2024-12-31",
+   "count_2024": 356,
+   "cleaned_count_2024": 356,
+   "excluded": [],
+   "duplicate_dates": [],
+   "gaps": [
+    {
+     "after": "2024-10-12",
+     "before": "2024-10-23",
+     "missing_days": 10
+    }
+   ],
+   "longest_gap_days": 10,
+   "outlier_thresholds_mm": {
+    "east_m": 9.125479692608678,
+    "north_m": 15.247572162933647,
+    "up_m": 40.28093451074291
+   },
+   "jump_candidates": [],
+   "ngl_steps_all": [
+    {
+     "date": "2017-09-08",
+     "type": "earthquake",
+     "threshold_distance_km": 2041.738,
+     "distance_km": 769.265,
+     "magnitude": 8.2,
+     "event_id": "us2000ahv0"
+    },
+    {
+     "date": "2017-09-19",
+     "type": "earthquake",
+     "threshold_distance_km": 575.44,
+     "distance_km": 142.988,
+     "magnitude": 7.1,
+     "event_id": "us2000ar20"
+    },
+    {
+     "date": "2018-02-16",
+     "type": "earthquake",
+     "threshold_distance_km": 645.654,
+     "distance_km": 365.113,
+     "magnitude": 7.2,
+     "event_id": "us2000d3km"
+    },
+    {
+     "date": "2020-06-23",
+     "type": "earthquake",
+     "threshold_distance_km": 812.831,
+     "distance_km": 536.631,
+     "magnitude": 7.4,
+     "event_id": "us6000ah9t"
+    },
+    {
+     "date": "2021-09-08",
+     "type": "earthquake",
+     "threshold_distance_km": 512.861,
+     "distance_km": 259.909,
+     "magnitude": 7.0,
+     "event_id": "us7000f93v"
+    },
+    {
+     "date": "2022-09-19",
+     "type": "earthquake",
+     "threshold_distance_km": 1023.293,
+     "distance_km": 364.037,
+     "magnitude": 7.6,
+     "event_id": "us7000i9bw"
+    },
+    {
+     "date": "2022-09-22",
+     "type": "earthquake",
+     "threshold_distance_km": 407.38,
+     "distance_km": 370.108,
+     "magnitude": 6.8,
+     "event_id": "us7000ia36"
+    }
+   ],
+   "ngl_steps_2023_12_to_2025_01": [],
+   "median_sigma_mm": {
+    "e": 0.808,
+    "n": 0.7020000000000001,
+    "u": 3.006
+   }
+  },
+  "TOL2": {
+   "source_url": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/TOL2.tenv3",
+   "retrieved": "2026-09-27 (file mtime 22:06 local); server Content-Length re-checked 2026-09-27T21:14Z, identical",
+   "sha256": "befc02008edb72c3529b3ee45a9f6ef38041634cf5a07f147038791fde05e674",
+   "bytes": 1502256,
+   "format": "NGL tenv3 ASCII, daily 24-h final solutions",
+   "reference_frame": "IGS20 (NGL tenv3/IGS20 directory)",
+   "units": "metres (positions and formal sigmas); ENU relative to NGL reference position; east/north/up positive",
+   "position_definition": "_e0+__east, n0+_north, u0+__up (integer+fractional parts summed)",
+   "antenna_heights_2024_m": [
+    0.098
+   ],
+   "reflon_2024": [
+    -99.6
+   ],
+   "full_start": "2003-03-01",
+   "full_end": "2026-07-18",
+   "full_count": 7363,
+   "start_2024": "2024-01-01",
+   "end_2024": "2024-12-31",
+   "count_2024": 366,
+   "cleaned_count_2024": 366,
+   "excluded": [],
+   "duplicate_dates": [],
+   "gaps": [],
+   "longest_gap_days": 0,
+   "outlier_thresholds_mm": {
+    "east_m": 9.57016645048352,
+    "north_m": 13.322968040965495,
+    "up_m": 32.786313236369004
+   },
+   "jump_candidates": [],
+   "ngl_steps_all": [
+    {
+     "date": "2016-05-17",
+     "type": "equipment",
+     "description": "Antenna_Type_Changed"
+    },
+    {
+     "date": "2016-05-17",
+     "type": "equipment",
+     "description": "Elevation_Cutoff_Changed"
+    },
+    {
+     "date": "2016-05-17",
+     "type": "equipment",
+     "description": "Receiver_Make_and_Model_Changed"
+    },
+    {
+     "date": "2021-05-12",
+     "type": "equipment",
+     "description": "Antenna_Type_Changed"
+    },
+    {
+     "date": "2021-05-12",
+     "type": "equipment",
+     "description": "Receiver_Make_and_Model_Changed"
+    },
+    {
+     "date": "2006-08-11",
+     "type": "earthquake",
+     "threshold_distance_km": 181.97,
+     "distance_km": 169.774,
+     "magnitude": 6.1,
+     "event_id": "usp000eqqe"
+    },
+    {
+     "date": "2011-12-11",
+     "type": "earthquake",
+     "threshold_distance_km": 288.403,
+     "distance_km": 146.164,
+     "magnitude": 6.5,
+     "event_id": "usp000jc1y"
+    },
+    {
+     "date": "2012-03-20",
+     "type": "earthquake",
+     "threshold_distance_km": 812.831,
+     "distance_km": 345.377,
+     "magnitude": 7.4,
+     "event_id": "usp000jghj"
+    },
+    {
+     "date": "2012-11-15",
+     "type": "earthquake",
+     "threshold_distance_km": 181.97,
+     "distance_km": 130.903,
+     "magnitude": 6.1,
+     "event_id": "usp000jvmk"
+    },
+    {
+     "date": "2014-04-18",
+     "type": "earthquake",
+     "threshold_distance_km": 645.654,
+     "distance_km": 253.231,
+     "magnitude": 7.2,
+     "event_id": "usb000pq41"
+    },
+    {
+     "date": "2014-05-08",
+     "type": "earthquake",
+     "threshold_distance_km": 257.04,
+     "distance_km": 256.785,
+     "magnitude": 6.4,
+     "event_id": "usb000qea2"
+    },
+    {
+     "date": "2017-09-08",
+     "type": "earthquake",
+     "threshold_distance_km": 2041.738,
+     "distance_km": 773.149,
+     "magnitude": 8.2,
+     "event_id": "us2000ahv0"
+    },
+    {
+     "date": "2017-09-19",
+     "type": "earthquake",
+     "threshold_distance_km": 575.44,
+     "distance_km": 146.92,
+     "magnitude": 7.1,
+     "event_id": "us2000ar20"
+    },
+    {
+     "date": "2018-02-16",
+     "type": "earthquake",
+     "threshold_distance_km": 645.654,
+     "distance_km": 368.214,
+     "magnitude": 7.2,
+     "event_id": "us2000d3km"
+    },
+    {
+     "date": "2020-06-23",
+     "type": "earthquake",
+     "threshold_distance_km": 812.831,
+     "distance_km": 540.357,
+     "magnitude": 7.4,
+     "event_id": "us6000ah9t"
+    },
+    {
+     "date": "2021-09-08",
+     "type": "earthquake",
+     "threshold_distance_km": 512.861,
+     "distance_km": 261.201,
+     "magnitude": 7.0,
+     "event_id": "us7000f93v"
+    },
+    {
+     "date": "2022-09-19",
+     "type": "earthquake",
+     "threshold_distance_km": 1023.293,
+     "distance_km": 360.775,
+     "magnitude": 7.6,
+     "event_id": "us7000i9bw"
+    },
+    {
+     "date": "2022-09-22",
+     "type": "earthquake",
+     "threshold_distance_km": 407.38,
+     "distance_km": 366.983,
+     "magnitude": 6.8,
+     "event_id": "us7000ia36"
+    },
+    {
+     "date": "2026-01-02",
+     "type": "earthquake",
+     "threshold_distance_km": 288.403,
+     "distance_km": 278.709,
+     "magnitude": 6.5,
+     "event_id": "us7000rm3k"
+    }
+   ],
+   "ngl_steps_2023_12_to_2025_01": [],
+   "median_sigma_mm": {
+    "e": 0.958,
+    "n": 0.8170000000000001,
+    "u": 3.721
+   }
+  }
+ },
+ "geometry": {
+  "source": "mintpy_redundant/inputs/geometryGeo.h5",
+  "heading_deg": -167.738979,
+  "azimuth_deg": -102.26102100000003,
+  "orbit": "DESCENDING",
+  "mintpy_version": "1.6.4",
+  "sign": "positive = motion toward satellite (MintPy enu2los; ifgram_inversion phase2range = -wavelength/4pi)",
+  "formula": "LOS = -E sin(i) sin(a) + N sin(i) cos(a) + U cos(i)",
+  "pixel_rule": "floor((coord - X_FIRST|Y_FIRST)/STEP); corner-registered grid",
+  "stations": {
+   "ICMX": {
+    "latitude": 19.40564110115,
+    "longitude": -99.17085368365,
+    "utm_x": 482061.6700341797,
+    "utm_y": 2145720.6198445978,
+    "y": 130,
+    "x": 41,
+    "inside_aoi": true,
+    "incidence_deg": 32.31935501098633,
+    "angle_source": "station pixel",
+    "azimuth_deg": -102.26102100000003,
+    "los_e": 0.522442913436685,
+    "los_n": -0.11353871108686346,
+    "los_u": 0.8450812761412492,
+    "pixel_centre_offset_m": [
+     -18.329965820303187,
+     -39.38015540223569
+    ]
+   },
+   "MMX1": {
+    "latitude": 19.4316539695,
+    "longitude": -99.0683904203,
+    "utm_x": 492820.6782643856,
+    "utm_y": 2148591.55673923,
+    "y": 95,
+    "x": 175,
+    "inside_aoi": true,
+    "incidence_deg": 31.62548828125,
+    "angle_source": "station pixel",
+    "azimuth_deg": -102.26102100000003,
+    "los_e": 0.5124041331180683,
+    "los_n": -0.11135705611759177,
+    "los_u": 0.8514937524235539,
+    "pixel_centre_offset_m": [
+     20.678264385613147,
+     31.55673923017457
+    ]
+   },
+   "MXTX": {
+    "latitude": 19.539625287950003,
+    "longitude": -98.8762885834,
+    "utm_x": 512978.07404709095,
+    "utm_y": 2160542.2387918066,
+    "y": -55,
+    "x": 427,
+    "inside_aoi": false,
+    "incidence_deg": 30.88471221923828,
+    "angle_source": "nearest raster edge pixel (diagnostic only)",
+    "azimuth_deg": -102.26102100000003,
+    "los_e": 0.5016037712954806,
+    "los_n": -0.10900989219006922,
+    "los_u": 0.8582018993377145,
+    "pixel_centre_offset_m": [
+     18.074047090951353,
+     -17.76120819337666
+    ]
+   },
+   "MXTO": {
+    "latitude": 19.27984639675,
+    "longitude": -99.6078086588,
+    "utm_x": 436134.9629242962,
+    "utm_y": 2131904.1596462876,
+    "y": 303,
+    "x": -533,
+    "inside_aoi": false,
+    "incidence_deg": 32.362937927246094,
+    "angle_source": "nearest raster edge pixel (diagnostic only)",
+    "azimuth_deg": -102.26102100000003,
+    "los_e": 0.5230709236655984,
+    "los_n": -0.11367519197330356,
+    "los_u": 0.8446743511824247,
+    "pixel_centre_offset_m": [
+     -25.037075703789014,
+     -15.840353712439537
+    ]
+   },
+   "TOL2": {
+    "latitude": 19.293233814049998,
+    "longitude": -99.64347334665001,
+    "utm_x": 432392.8975088996,
+    "utm_y": 2133399.0795903318,
+    "y": 285,
+    "x": -580,
+    "inside_aoi": false,
+    "incidence_deg": 32.38146209716797,
+    "angle_source": "nearest raster edge pixel (diagnostic only)",
+    "azimuth_deg": -102.26102100000003,
+    "los_e": 0.5233377569900892,
+    "los_n": -0.11373318091517363,
+    "los_u": 0.8445012466938688,
+    "pixel_centre_offset_m": [
+     -7.1024911003769375,
+     39.07959033176303
+    ]
+   }
+  }
+ },
+ "insar_reference": {
+  "REF_DATE": "20240909",
+  "REF_Y": "7",
+  "REF_X": "186",
+  "per_case": {
+   "A_redundant_no_ramp": {
+    "REF_DATE": "20240909",
+    "REF_Y": "7",
+    "REF_X": "186",
+    "UNIT": "m",
+    "mintpy.deramp": "None"
+   },
+   "B_redundant_linear_ramp": {
+    "REF_DATE": "20240909",
+    "REF_Y": "7",
+    "REF_X": "186",
+    "UNIT": "m",
+    "mintpy.deramp": "linear"
+   },
+   "C_ERA5_no_ramp": {
+    "REF_DATE": "20240909",
+    "REF_Y": "7",
+    "REF_X": "186",
+    "UNIT": "m",
+    "mintpy.deramp": "None"
+   },
+   "D_ERA5_linear_ramp": {
+    "REF_DATE": "20240909",
+    "REF_Y": "7",
+    "REF_X": "186",
+    "UNIT": "m",
+    "mintpy.deramp": "linear"
+   }
+  }
+ },
+ "matching": {
+  "tolerance_days": 1,
+  "rule": "nearest cleaned daily 24-h NGL solution within +/-1 day of the Sentinel-1 date; ties to preceding day; no interpolation",
+  "sentinel_dates": [
+   "20240113",
+   "20240125",
+   "20240206",
+   "20240218",
+   "20240301",
+   "20240313",
+   "20240325",
+   "20240406",
+   "20240418",
+   "20240430",
+   "20240512",
+   "20240629",
+   "20240804",
+   "20240816",
+   "20240828",
+   "20240909",
+   "20240921",
+   "20241003",
+   "20241015",
+   "20241027",
+   "20241108",
+   "20241120",
+   "20241202",
+   "20241214",
+   "20241226"
+  ],
+  "MMX1_2024_span": [
+   "2024-04-16",
+   "2024-10-10"
+  ],
+  "sentinel_dates_in_common_window": [
+   "20240418",
+   "20240430",
+   "20240512",
+   "20240629",
+   "20240804",
+   "20240816",
+   "20240828",
+   "20240909",
+   "20240921",
+   "20241003"
+  ],
+  "common_dates": [
+   "20240418",
+   "20240430",
+   "20240512",
+   "20240629",
+   "20240804",
+   "20240816",
+   "20240828",
+   "20240909",
+   "20240921",
+   "20241003"
+  ],
+  "details": [
+   {
+    "sentinel": "20240418",
+    "ICMX": "2024-04-18",
+    "ICMX_offset": 0,
+    "MMX1": "2024-04-18",
+    "MMX1_offset": 0
+   },
+   {
+    "sentinel": "20240430",
+    "ICMX": "2024-04-30",
+    "ICMX_offset": 0,
+    "MMX1": "2024-05-01",
+    "MMX1_offset": 1
+   },
+   {
+    "sentinel": "20240512",
+    "ICMX": "2024-05-12",
+    "ICMX_offset": 0,
+    "MMX1": "2024-05-12",
+    "MMX1_offset": 0
+   },
+   {
+    "sentinel": "20240629",
+    "ICMX": "2024-06-29",
+    "ICMX_offset": 0,
+    "MMX1": "2024-06-29",
+    "MMX1_offset": 0
+   },
+   {
+    "sentinel": "20240804",
+    "ICMX": "2024-08-04",
+    "ICMX_offset": 0,
+    "MMX1": "2024-08-04",
+    "MMX1_offset": 0
+   },
+   {
+    "sentinel": "20240816",
+    "ICMX": "2024-08-16",
+    "ICMX_offset": 0,
+    "MMX1": "2024-08-15",
+    "MMX1_offset": -1
+   },
+   {
+    "sentinel": "20240828",
+    "ICMX": "2024-08-28",
+    "ICMX_offset": 0,
+    "MMX1": "2024-08-27",
+    "MMX1_offset": -1
+   },
+   {
+    "sentinel": "20240909",
+    "ICMX": "2024-09-09",
+    "ICMX_offset": 0,
+    "MMX1": "2024-09-08",
+    "MMX1_offset": -1
+   },
+   {
+    "sentinel": "20240921",
+    "ICMX": "2024-09-21",
+    "ICMX_offset": 0,
+    "MMX1": "2024-09-21",
+    "MMX1_offset": 0
+   },
+   {
+    "sentinel": "20241003",
+    "ICMX": "2024-10-03",
+    "ICMX_offset": 0,
+    "MMX1": "2024-10-03",
+    "MMX1_offset": 0
+   }
+  ],
+  "exact_date_pairs": [
+   "20240418",
+   "20240512",
+   "20240629",
+   "20240804",
+   "20240921",
+   "20241003"
+  ],
+  "tolerance_sensitivity": {
+   "0": {
+    "n": 6,
+    "dates": [
+     "20240418",
+     "20240512",
+     "20240629",
+     "20240804",
+     "20240921",
+     "20241003"
+    ],
+    "gnss_rate_mm_yr": 254.44956484823484
+   },
+   "1": {
+    "n": 10,
+    "dates": [
+     "20240418",
+     "20240430",
+     "20240512",
+     "20240629",
+     "20240804",
+     "20240816",
+     "20240828",
+     "20240909",
+     "20240921",
+     "20241003"
+    ],
+    "gnss_rate_mm_yr": 256.32021475076357
+   },
+   "2": {
+    "n": 10,
+    "dates": [
+     "20240418",
+     "20240430",
+     "20240512",
+     "20240629",
+     "20240804",
+     "20240816",
+     "20240828",
+     "20240909",
+     "20240921",
+     "20241003"
+    ],
+    "gnss_rate_mm_yr": 256.32021475076357
+   }
+  }
+ },
+ "gnss_differential": {
+  "rate_mm_yr": 256.32021475076357,
+  "ols_ci95": [
+   242.05994282725345,
+   270.58048667427363
+  ],
+  "block_boot_ci95": [
+   246.46894810484645,
+   264.48650603325234
+  ],
+  "theil_sen_mm_yr": 254.97436026699478,
+  "raw_unfiltered_rate_mm_yr": 262.03990546759377,
+  "raw_common_dates": [
+   "20240418",
+   "20240430",
+   "20240512",
+   "20240629",
+   "20240804",
+   "20240816",
+   "20240828",
+   "20240909",
+   "20240921",
+   "20241003"
+  ],
+  "daily_common_window_rate_mm_yr": 244.86869294402018,
+  "daily_common_window_n": 122,
+  "daily_all_shared_2024_rate_mm_yr": 243.65876829082768,
+  "daily_all_shared_2024_span": [
+   "2024-04-16",
+   "2024-10-10"
+  ],
+  "daily_all_shared_2024_n": 131,
+  "series_mm": [
+   -4448475.831717631,
+   -4448470.02957706,
+   -4448463.124631263,
+   -4448427.1116975285,
+   -4448403.20597557,
+   -4448399.39696496,
+   -4448379.244573909,
+   -4448377.088832087,
+   -4448367.75647488,
+   -4448361.128823599
+  ]
+ },
+ "ramp_plane": {
+  "A_minus_B": {
+   "gradient_east_mm_yr_per_km": -11.718965492570504,
+   "gradient_north_mm_yr_per_km": -2.8814253541759793,
+   "plane_fit_rms_mm_yr": 2.6410284166686577e-05,
+   "ICMX_minus_MMX1_baseline_east_km": -10.72,
+   "ICMX_minus_MMX1_baseline_north_km": -2.8,
+   "plane_ICMX_minus_MMX1_mm_yr": 133.69530107204855
+  },
+  "C_minus_D": {
+   "gradient_east_mm_yr_per_km": -11.609756001991407,
+   "gradient_north_mm_yr_per_km": -2.8829916057402016,
+   "plane_fit_rms_mm_yr": 1.5962659007790914e-05,
+   "ICMX_minus_MMX1_baseline_east_km": -10.72,
+   "ICMX_minus_MMX1_baseline_north_km": -2.8,
+   "plane_ICMX_minus_MMX1_mm_yr": 132.52896083742047
+  }
+ },
+ "patches": {
+  "A_redundant_no_ramp": {
+   "ICMX": {
+    "5": {
+     "patch_size_px": 5,
+     "patch_size_m": 400,
+     "valid_pixels": 25,
+     "total_pixels": 25,
+     "temporal_coherence_median": 0.9997357130050659,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 181.11846923828125,
+     "velocity_mad_mm_yr": 3.7629662109375,
+     "velocity_iqr_mm_yr": 4.3277130126953125,
+     "velocity_std_median_mm_yr": 1.8821101188659668,
+     "single_pixel_velocity_mm_yr": 180.92457580566406,
+     "timeseries_m": [
+      -0.11574259400367737,
+      -0.11020172387361526,
+      -0.10455701500177383,
+      -0.10028188675642014,
+      -0.09386487305164337,
+      -0.08492352068424225,
+      -0.07880540192127228,
+      -0.06794615089893341,
+      -0.06696663796901703,
+      -0.05931183695793152,
+      -0.05943338945508003,
+      -0.03828325867652893,
+      -0.01428939402103424,
+      -0.009431526064872742,
+      0.001217171549797058,
+      0.0,
+      0.010414831340312958,
+      0.015675365924835205,
+      0.023097015917301178,
+      0.02704230695962906,
+      0.028076402842998505,
+      0.03735315054655075,
+      0.04489918798208237,
+      0.050170667469501495,
+      0.06231889873743057
+     ]
+    },
+    "9": {
+     "patch_size_px": 9,
+     "patch_size_m": 720,
+     "valid_pixels": 81,
+     "total_pixels": 81,
+     "temporal_coherence_median": 0.9997780323028564,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 181.48898315429688,
+     "velocity_mad_mm_yr": 6.259763607788085,
+     "velocity_iqr_mm_yr": 8.637222290039062,
+     "velocity_std_median_mm_yr": 1.8862993717193604,
+     "single_pixel_velocity_mm_yr": 180.92457580566406,
+     "timeseries_m": [
+      -0.11580963432788849,
+      -0.11050311475992203,
+      -0.10457849502563477,
+      -0.10048839449882507,
+      -0.09407807141542435,
+      -0.08492352068424225,
+      -0.07889720052480698,
+      -0.06794615089893341,
+      -0.06711407005786896,
+      -0.05932444706559181,
+      -0.05943338945508003,
+      -0.03837998956441879,
+      -0.014297738671302795,
+      -0.009456276893615723,
+      0.0010293126106262207,
+      0.0,
+      0.010465309023857117,
+      0.015690810978412628,
+      0.023088417947292328,
+      0.027132943272590637,
+      0.028087474405765533,
+      0.03731495887041092,
+      0.04489918798208237,
+      0.050170667469501495,
+      0.06231889873743057
+     ]
+    },
+    "13": {
+     "patch_size_px": 13,
+     "patch_size_m": 1040,
+     "valid_pixels": 169,
+     "total_pixels": 169,
+     "temporal_coherence_median": 0.9997879862785339,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 181.3050994873047,
+     "velocity_mad_mm_yr": 8.70047937927246,
+     "velocity_iqr_mm_yr": 11.697891235351562,
+     "velocity_std_median_mm_yr": 1.8892349004745483,
+     "single_pixel_velocity_mm_yr": 180.92457580566406,
+     "timeseries_m": [
+      -0.11580963432788849,
+      -0.11050311475992203,
+      -0.10455701500177383,
+      -0.10048839449882507,
+      -0.09398635476827621,
+      -0.08483119308948517,
+      -0.07880540192127228,
+      -0.06791765987873077,
+      -0.06693898141384125,
+      -0.05926011502742767,
+      -0.05943338945508003,
+      -0.038298845291137695,
+      -0.01428939402103424,
+      -0.009456276893615723,
+      0.000991925597190857,
+      0.0,
+      0.010462813079357147,
+      0.015675365924835205,
+      0.023054733872413635,
+      0.027098380029201508,
+      0.028087474405765533,
+      0.03731352090835571,
+      0.04489918798208237,
+      0.050170667469501495,
+      0.06231889873743057
+     ]
+    }
+   },
+   "MMX1": {
+    "5": {
+     "patch_size_px": 5,
+     "patch_size_m": 400,
+     "valid_pixels": 25,
+     "total_pixels": 25,
+     "temporal_coherence_median": 0.9995307326316833,
+     "temporal_coherence_min": 0.9990779161453247,
+     "velocity_median_mm_yr": -47.93589782714844,
+     "velocity_mad_mm_yr": 2.9422775688171385,
+     "velocity_iqr_mm_yr": 3.1845664978027344,
+     "velocity_std_median_mm_yr": 1.4745937585830688,
+     "single_pixel_velocity_mm_yr": -48.045597076416016,
+     "timeseries_m": [
+      0.02770252898335457,
+      0.03118523582816124,
+      0.029819119721651077,
+      0.026386354118585587,
+      0.025476505979895592,
+      0.024283573031425476,
+      0.02554437518119812,
+      0.01955377869307995,
+      0.021351324394345284,
+      0.021891901269555092,
+      0.01903778314590454,
+      0.008955834433436394,
+      0.006237668916583061,
+      0.005246024578809738,
+      4.4308602809906006e-05,
+      0.0,
+      -0.00340862013399601,
+      -0.006016470491886139,
+      -0.003905192017555237,
+      -0.003449447453022003,
+      -0.003459971398115158,
+      -0.011549755930900574,
+      -0.011526301503181458,
+      -0.011347582563757896,
+      -0.01046697422862053
+     ]
+    },
+    "9": {
+     "patch_size_px": 9,
+     "patch_size_m": 720,
+     "valid_pixels": 81,
+     "total_pixels": 81,
+     "temporal_coherence_median": 0.9995953440666199,
+     "temporal_coherence_min": 0.992639422416687,
+     "velocity_median_mm_yr": -46.235618591308594,
+     "velocity_mad_mm_yr": 4.423627665710449,
+     "velocity_iqr_mm_yr": 6.106925964355469,
+     "velocity_std_median_mm_yr": 1.4787003993988037,
+     "single_pixel_velocity_mm_yr": -48.045597076416016,
+     "timeseries_m": [
+      0.02705584280192852,
+      0.030477292835712433,
+      0.029177118092775345,
+      0.025614174082875252,
+      0.024821091443300247,
+      0.02359393797814846,
+      0.02472120150923729,
+      0.01881173811852932,
+      0.02069990150630474,
+      0.021474571898579597,
+      0.018682178109884262,
+      0.008693194016814232,
+      0.0059632062911987305,
+      0.0049893297255039215,
+      -1.3774260878562927e-05,
+      0.0,
+      -0.003393203020095825,
+      -0.0058601852506399155,
+      -0.003703448921442032,
+      -0.0032147876918315887,
+      -0.0032968670129776,
+      -0.011491827666759491,
+      -0.01118345558643341,
+      -0.01111510582268238,
+      -0.01036955788731575
+     ]
+    },
+    "13": {
+     "patch_size_px": 13,
+     "patch_size_m": 1040,
+     "valid_pixels": 169,
+     "total_pixels": 169,
+     "temporal_coherence_median": 0.9995406270027161,
+     "temporal_coherence_min": 0.9648503065109253,
+     "velocity_median_mm_yr": -44.37188720703125,
+     "velocity_mad_mm_yr": 7.396315773010254,
+     "velocity_iqr_mm_yr": 9.659507751464844,
+     "velocity_std_median_mm_yr": 1.48135507106781,
+     "single_pixel_velocity_mm_yr": -48.045597076416016,
+     "timeseries_m": [
+      0.025984544306993484,
+      0.029361259192228317,
+      0.0279825609177351,
+      0.024473272264003754,
+      0.023684656247496605,
+      0.022540494799613953,
+      0.02374209836125374,
+      0.01801615208387375,
+      0.020012618973851204,
+      0.02081041969358921,
+      0.01789090223610401,
+      0.008294841274619102,
+      0.005640133284032345,
+      0.00476180762052536,
+      -2.7991831302642822e-05,
+      0.0,
+      -0.003449438139796257,
+      -0.005671726539731026,
+      -0.0035267770290374756,
+      -0.0030882395803928375,
+      -0.002957519143819809,
+      -0.011135991662740707,
+      -0.010773751884698868,
+      -0.01062355749309063,
+      -0.009918451309204102
+     ]
+    }
+   }
+  },
+  "B_redundant_linear_ramp": {
+   "ICMX": {
+    "5": {
+     "patch_size_px": 5,
+     "patch_size_m": 400,
+     "valid_pixels": 25,
+     "total_pixels": 25,
+     "temporal_coherence_median": 0.9997357130050659,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 17.110492706298828,
+     "velocity_mad_mm_yr": 2.3751213088989256,
+     "velocity_iqr_mm_yr": 3.0673017501831055,
+     "velocity_std_median_mm_yr": 1.6886978149414062,
+     "single_pixel_velocity_mm_yr": 16.631322860717773,
+     "timeseries_m": [
+      -0.0009273886680603027,
+      -0.006054691970348358,
+      -0.007871530950069427,
+      -0.009860299527645111,
+      -0.00598328560590744,
+      -0.007242359220981598,
+      -0.003985323011875153,
+      -0.004520222544670105,
+      -0.0062879398465156555,
+      -0.002890225499868393,
+      -0.0036900416016578674,
+      -0.005704652518033981,
+      0.0020226500928401947,
+      0.001061650924384594,
+      0.001252607791684568,
+      0.0,
+      0.0027104662731289864,
+      0.00218950305134058,
+      0.00763336755335331,
+      0.005199450999498367,
+      0.010271230712532997,
+      0.00792720541357994,
+      0.007838193327188492,
+      0.00686408206820488,
+      0.007518555968999863
+     ]
+    },
+    "9": {
+     "patch_size_px": 9,
+     "patch_size_m": 720,
+     "valid_pixels": 81,
+     "total_pixels": 81,
+     "temporal_coherence_median": 0.9997780323028564,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 17.110492706298828,
+     "velocity_mad_mm_yr": 3.6062136566162106,
+     "velocity_iqr_mm_yr": 4.765649795532227,
+     "velocity_std_median_mm_yr": 1.6938570737838745,
+     "single_pixel_velocity_mm_yr": 16.631322860717773,
+     "timeseries_m": [
+      -0.0009273886680603027,
+      -0.006011702120304108,
+      -0.007866144180297852,
+      -0.009869895875453949,
+      -0.006130523979663849,
+      -0.007242359220981598,
+      -0.004249460995197296,
+      -0.004520222544670105,
+      -0.006347469985485077,
+      -0.0030454620718955994,
+      -0.0037292689085006714,
+      -0.005704652518033981,
+      0.002022193744778633,
+      0.0010364577174186707,
+      0.001068765064701438,
+      0.0,
+      0.0026725176721811295,
+      0.0022403448820114136,
+      0.00766468420624733,
+      0.005199450999498367,
+      0.010298270732164383,
+      0.00792720541357994,
+      0.007838193327188492,
+      0.00691329687833786,
+      0.007518555968999863
+     ]
+    },
+    "13": {
+     "patch_size_px": 13,
+     "patch_size_m": 1040,
+     "valid_pixels": 169,
+     "total_pixels": 169,
+     "temporal_coherence_median": 0.9997879862785339,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 17.110492706298828,
+     "velocity_mad_mm_yr": 4.480365348815917,
+     "velocity_iqr_mm_yr": 5.846210479736328,
+     "velocity_std_median_mm_yr": 1.6968193054199219,
+     "single_pixel_velocity_mm_yr": 16.631322860717773,
+     "timeseries_m": [
+      -0.0010167509317398071,
+      -0.00605454295873642,
+      -0.007866144180297852,
+      -0.009997516870498657,
+      -0.0061348676681518555,
+      -0.007286876440048218,
+      -0.004249460995197296,
+      -0.004470258951187134,
+      -0.0064916834235191345,
+      -0.003067798912525177,
+      -0.0036859288811683655,
+      -0.005704205483198166,
+      0.0020389817655086517,
+      0.0010433830320835114,
+      0.001030998770147562,
+      0.0,
+      0.002693614922463894,
+      0.00218950305134058,
+      0.00766468420624733,
+      0.0051701851189136505,
+      0.010298270732164383,
+      0.007910668849945068,
+      0.00780964270234108,
+      0.006862036883831024,
+      0.007511436939239502
+     ]
+    }
+   },
+   "MMX1": {
+    "5": {
+     "patch_size_px": 5,
+     "patch_size_m": 400,
+     "valid_pixels": 25,
+     "total_pixels": 25,
+     "temporal_coherence_median": 0.9995307326316833,
+     "temporal_coherence_min": 0.9990779161453247,
+     "velocity_median_mm_yr": -78.4885025024414,
+     "velocity_mad_mm_yr": 1.3725293472290039,
+     "velocity_iqr_mm_yr": 1.8723220825195312,
+     "velocity_std_median_mm_yr": 1.4891388416290283,
+     "single_pixel_velocity_mm_yr": -78.64352416992188,
+     "timeseries_m": [
+      0.0520901083946228,
+      0.052987366914749146,
+      0.04778902977705002,
+      0.043659109622240067,
+      0.04267510771751404,
+      0.03854595124721527,
+      0.03962619602680206,
+      0.03212643414735794,
+      0.028624899685382843,
+      0.03159893676638603,
+      0.028991881757974625,
+      0.014006780460476875,
+      0.010868849232792854,
+      0.00783347338438034,
+      0.0001531138550490141,
+      0.0,
+      -0.0025811325758695602,
+      -0.006851824000477791,
+      -0.005050966516137123,
+      -0.008090658113360405,
+      -0.006032634526491165,
+      -0.01629810966551304,
+      -0.01705199107527733,
+      -0.01899890787899494,
+      -0.02230982296168804
+     ]
+    },
+    "9": {
+     "patch_size_px": 9,
+     "patch_size_m": 720,
+     "valid_pixels": 81,
+     "total_pixels": 81,
+     "temporal_coherence_median": 0.9995953440666199,
+     "temporal_coherence_min": 0.992639422416687,
+     "velocity_median_mm_yr": -77.07752990722656,
+     "velocity_mad_mm_yr": 3.226955726623535,
+     "velocity_iqr_mm_yr": 4.241340637207031,
+     "velocity_std_median_mm_yr": 1.4943078756332397,
+     "single_pixel_velocity_mm_yr": -78.64352416992188,
+     "timeseries_m": [
+      0.05164400488138199,
+      0.05250880867242813,
+      0.04714071750640869,
+      0.04290774092078209,
+      0.042139291763305664,
+      0.03791903331875801,
+      0.038981691002845764,
+      0.03153734654188156,
+      0.028104882687330246,
+      0.031227122992277145,
+      0.028520919382572174,
+      0.01363583467900753,
+      0.010614152997732162,
+      0.0076537285931408405,
+      9.555462747812271e-05,
+      0.0,
+      -0.0025753015652298927,
+      -0.006753750145435333,
+      -0.004984842613339424,
+      -0.00802677497267723,
+      -0.006032634526491165,
+      -0.016234613955020905,
+      -0.01679655909538269,
+      -0.018633682280778885,
+      -0.021687937900424004
+     ]
+    },
+    "13": {
+     "patch_size_px": 13,
+     "patch_size_m": 1040,
+     "valid_pixels": 169,
+     "total_pixels": 169,
+     "temporal_coherence_median": 0.9995406270027161,
+     "temporal_coherence_min": 0.9648503065109253,
+     "velocity_median_mm_yr": -74.71047973632812,
+     "velocity_mad_mm_yr": 4.647004014587402,
+     "velocity_iqr_mm_yr": 6.65667724609375,
+     "velocity_std_median_mm_yr": 1.502293586730957,
+     "single_pixel_velocity_mm_yr": -78.64352416992188,
+     "timeseries_m": [
+      0.05056067556142807,
+      0.0513947531580925,
+      0.04587535932660103,
+      0.041733331978321075,
+      0.04083656519651413,
+      0.03682301938533783,
+      0.03781247138977051,
+      0.03063579462468624,
+      0.02713616192340851,
+      0.03036702796816826,
+      0.027826206758618355,
+      0.013279417529702187,
+      0.010288367047905922,
+      0.007433160673826933,
+      7.283411105163395e-05,
+      0.0,
+      -0.0025847982615232468,
+      -0.006644686684012413,
+      -0.004743549972772598,
+      -0.007900170981884003,
+      -0.005585655570030212,
+      -0.015884237363934517,
+      -0.016415774822235107,
+      -0.018157845363020897,
+      -0.02129717916250229
+     ]
+    }
+   }
+  },
+  "C_ERA5_no_ramp": {
+   "ICMX": {
+    "5": {
+     "patch_size_px": 5,
+     "patch_size_m": 400,
+     "valid_pixels": 25,
+     "total_pixels": 25,
+     "temporal_coherence_median": 0.9997357130050659,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 181.08982849121094,
+     "velocity_mad_mm_yr": 3.75511614074707,
+     "velocity_iqr_mm_yr": 4.3045806884765625,
+     "velocity_std_median_mm_yr": 2.1648995876312256,
+     "single_pixel_velocity_mm_yr": 180.90789794921875,
+     "timeseries_m": [
+      -0.11206355690956116,
+      -0.1059889867901802,
+      -0.1070685163140297,
+      -0.10175316780805588,
+      -0.09047766029834747,
+      -0.08491493761539459,
+      -0.07377000153064728,
+      -0.06706376373767853,
+      -0.06928224861621857,
+      -0.05938238278031349,
+      -0.055686403065919876,
+      -0.03691735863685608,
+      -0.014252200722694397,
+      -0.009303733706474304,
+      0.0018650069832801819,
+      0.0,
+      0.008906163275241852,
+      0.018984615802764893,
+      0.02091667801141739,
+      0.02720419317483902,
+      0.03281664103269577,
+      0.04097210615873337,
+      0.04581018537282944,
+      0.050829894840717316,
+      0.06492004543542862
+     ]
+    },
+    "9": {
+     "patch_size_px": 9,
+     "patch_size_m": 720,
+     "valid_pixels": 81,
+     "total_pixels": 81,
+     "temporal_coherence_median": 0.9997780323028564,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 181.5323944091797,
+     "velocity_mad_mm_yr": 6.114367639160156,
+     "velocity_iqr_mm_yr": 8.543701171875,
+     "velocity_std_median_mm_yr": 2.1667087078094482,
+     "single_pixel_velocity_mm_yr": 180.90789794921875,
+     "timeseries_m": [
+      -0.11217112839221954,
+      -0.10616961866617203,
+      -0.10714268684387207,
+      -0.10200998187065125,
+      -0.0907287672162056,
+      -0.08488865941762924,
+      -0.07384133338928223,
+      -0.06706376373767853,
+      -0.06926406919956207,
+      -0.059463221579790115,
+      -0.05569222569465637,
+      -0.03702481836080551,
+      -0.014252200722694397,
+      -0.00933016836643219,
+      0.0016649365425109863,
+      0.0,
+      0.008941464126110077,
+      0.01898834854364395,
+      0.020907282829284668,
+      0.027329958975315094,
+      0.03281664103269577,
+      0.04096578061580658,
+      0.04581018537282944,
+      0.050829894840717316,
+      0.06492004543542862
+     ]
+    },
+    "13": {
+     "patch_size_px": 13,
+     "patch_size_m": 1040,
+     "valid_pixels": 169,
+     "total_pixels": 169,
+     "temporal_coherence_median": 0.9997879862785339,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 181.22006225585938,
+     "velocity_mad_mm_yr": 8.763370431518554,
+     "velocity_iqr_mm_yr": 11.6103515625,
+     "velocity_std_median_mm_yr": 2.167768716812134,
+     "single_pixel_velocity_mm_yr": 180.90789794921875,
+     "timeseries_m": [
+      -0.11217112839221954,
+      -0.10616961866617203,
+      -0.1070685163140297,
+      -0.10200998187065125,
+      -0.09061010926961899,
+      -0.08485417068004608,
+      -0.07377000153064728,
+      -0.06699639558792114,
+      -0.06922374665737152,
+      -0.05931388959288597,
+      -0.055686403065919876,
+      -0.03694800287485123,
+      -0.014251068234443665,
+      -0.00933019071817398,
+      0.0016209036111831665,
+      0.0,
+      0.008941464126110077,
+      0.018980160355567932,
+      0.020897366106510162,
+      0.027329958975315094,
+      0.03281664103269577,
+      0.04096578061580658,
+      0.04581018537282944,
+      0.050829894840717316,
+      0.06492004543542862
+     ]
+    }
+   },
+   "MMX1": {
+    "5": {
+     "patch_size_px": 5,
+     "patch_size_m": 400,
+     "valid_pixels": 25,
+     "total_pixels": 25,
+     "temporal_coherence_median": 0.9995307326316833,
+     "temporal_coherence_min": 0.9990779161453247,
+     "velocity_median_mm_yr": -47.47698211669922,
+     "velocity_mad_mm_yr": 2.894600269317627,
+     "velocity_iqr_mm_yr": 3.1566314697265625,
+     "velocity_std_median_mm_yr": 1.4532760381698608,
+     "single_pixel_velocity_mm_yr": -47.57683563232422,
+     "timeseries_m": [
+      0.028267310932278633,
+      0.030582275241613388,
+      0.027974236756563187,
+      0.025565478950738907,
+      0.025798609480261803,
+      0.023332690820097923,
+      0.025909394025802612,
+      0.020258985459804535,
+      0.01563924178481102,
+      0.019644567742943764,
+      0.01861606165766716,
+      0.00923907570540905,
+      0.0056151580065488815,
+      0.004127126187086105,
+      -7.782131433486938e-06,
+      0.0,
+      -0.004855820909142494,
+      -0.004870392382144928,
+      -0.00459684431552887,
+      -0.00459437258541584,
+      -0.0027518682181835175,
+      -0.012823360040783882,
+      -0.011389210820198059,
+      -0.012435724958777428,
+      -0.010924261063337326
+     ]
+    },
+    "9": {
+     "patch_size_px": 9,
+     "patch_size_m": 720,
+     "valid_pixels": 81,
+     "total_pixels": 81,
+     "temporal_coherence_median": 0.9995953440666199,
+     "temporal_coherence_min": 0.992639422416687,
+     "velocity_median_mm_yr": -45.76791763305664,
+     "velocity_mad_mm_yr": 4.407192288208008,
+     "velocity_iqr_mm_yr": 6.098423004150391,
+     "velocity_std_median_mm_yr": 1.4611103534698486,
+     "single_pixel_velocity_mm_yr": -47.57683563232422,
+     "timeseries_m": [
+      0.027699334546923637,
+      0.02988458424806595,
+      0.02733628824353218,
+      0.024789245799183846,
+      0.025154883041977882,
+      0.02263430319726467,
+      0.025101717561483383,
+      0.01954169198870659,
+      0.015049578621983528,
+      0.01911737583577633,
+      0.018281884491443634,
+      0.008958613499999046,
+      0.005343908444046974,
+      0.003915473818778992,
+      -5.969032645225525e-05,
+      0.0,
+      -0.004855820909142494,
+      -0.0046988483518362045,
+      -0.004398643970489502,
+      -0.004356935620307922,
+      -0.002609219402074814,
+      -0.01269368827342987,
+      -0.011049464344978333,
+      -0.012214254587888718,
+      -0.010811109095811844
+     ]
+    },
+    "13": {
+     "patch_size_px": 13,
+     "patch_size_m": 1040,
+     "valid_pixels": 169,
+     "total_pixels": 169,
+     "temporal_coherence_median": 0.9995406270027161,
+     "temporal_coherence_min": 0.9648503065109253,
+     "velocity_median_mm_yr": -43.92756271362305,
+     "velocity_mad_mm_yr": 7.38872586364746,
+     "velocity_iqr_mm_yr": 9.689807891845703,
+     "velocity_std_median_mm_yr": 1.4669626951217651,
+     "single_pixel_velocity_mm_yr": -47.57683563232422,
+     "timeseries_m": [
+      0.026665229350328445,
+      0.028740834444761276,
+      0.026100484654307365,
+      0.023641429841518402,
+      0.023966820910573006,
+      0.021586820483207703,
+      0.024185415357351303,
+      0.018756680190563202,
+      0.014223454520106316,
+      0.018466200679540634,
+      0.017388463020324707,
+      0.008548228070139885,
+      0.005010340362787247,
+      0.003651786595582962,
+      -8.731149137020111e-05,
+      0.0,
+      -0.004882741719484329,
+      -0.0045132115483284,
+      -0.004193507134914398,
+      -0.004229692742228508,
+      -0.002232121303677559,
+      -0.012234572321176529,
+      -0.010655675083398819,
+      -0.011688334867358208,
+      -0.010339021682739258
+     ]
+    }
+   }
+  },
+  "D_ERA5_linear_ramp": {
+   "ICMX": {
+    "5": {
+     "patch_size_px": 5,
+     "patch_size_m": 400,
+     "valid_pixels": 25,
+     "total_pixels": 25,
+     "temporal_coherence_median": 0.9997357130050659,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 18.337425231933594,
+     "velocity_mad_mm_yr": 2.3530387447357177,
+     "velocity_iqr_mm_yr": 3.0711326599121094,
+     "velocity_std_median_mm_yr": 1.611387848854065,
+     "single_pixel_velocity_mm_yr": 17.866090774536133,
+     "timeseries_m": [
+      -0.0022835657000541687,
+      -0.00748346745967865,
+      -0.010063022375106812,
+      -0.010086409747600555,
+      -0.0075271353125572205,
+      -0.008217260241508484,
+      -0.006476052105426788,
+      -0.006812304258346558,
+      -0.00833900272846222,
+      -0.004056010395288467,
+      -0.004487309604883194,
+      -0.005364414304494858,
+      0.0022415854036808014,
+      0.001342466101050377,
+      0.00163811887614429,
+      0.0,
+      0.0021157748997211456,
+      0.0013715941458940506,
+      0.00686255469918251,
+      0.00511714443564415,
+      0.008770886808633804,
+      0.00813359022140503,
+      0.0074496082961559296,
+      0.005445193499326706,
+      0.006208062171936035
+     ]
+    },
+    "9": {
+     "patch_size_px": 9,
+     "patch_size_m": 720,
+     "valid_pixels": 81,
+     "total_pixels": 81,
+     "temporal_coherence_median": 0.9997780323028564,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 18.369308471679688,
+     "velocity_mad_mm_yr": 3.5481695137023923,
+     "velocity_iqr_mm_yr": 4.799450874328613,
+     "velocity_std_median_mm_yr": 1.6146745681762695,
+     "single_pixel_velocity_mm_yr": 17.866090774536133,
+     "timeseries_m": [
+      -0.0022835657000541687,
+      -0.007460109889507294,
+      -0.010047867894172668,
+      -0.010093636810779572,
+      -0.007680393755435944,
+      -0.008253991603851318,
+      -0.006742827594280243,
+      -0.006812304258346558,
+      -0.008384481072425842,
+      -0.004203919321298599,
+      -0.004522364586591721,
+      -0.0053764693439006805,
+      0.0022391341626644135,
+      0.001308046281337738,
+      0.0014438985381275415,
+      0.0,
+      0.002058815211057663,
+      0.0014322102069854736,
+      0.006886228919029236,
+      0.00511714443564415,
+      0.008804023265838623,
+      0.00813359022140503,
+      0.0074496082961559296,
+      0.00551440566778183,
+      0.006208062171936035
+     ]
+    },
+    "13": {
+     "patch_size_px": 13,
+     "patch_size_m": 1040,
+     "valid_pixels": 169,
+     "total_pixels": 169,
+     "temporal_coherence_median": 0.9997879862785339,
+     "temporal_coherence_min": 0.999244213104248,
+     "velocity_median_mm_yr": 18.369308471679688,
+     "velocity_mad_mm_yr": 4.366499741363525,
+     "velocity_iqr_mm_yr": 5.809389114379883,
+     "velocity_std_median_mm_yr": 1.6146745681762695,
+     "single_pixel_velocity_mm_yr": 17.866090774536133,
+     "timeseries_m": [
+      -0.0023522675037384033,
+      -0.00748346745967865,
+      -0.010047867894172668,
+      -0.01023167371749878,
+      -0.007680393755435944,
+      -0.008272118866443634,
+      -0.006742827594280243,
+      -0.006743833422660828,
+      -0.008491314947605133,
+      -0.0042519718408584595,
+      -0.004477322101593018,
+      -0.005364414304494858,
+      0.0022565610706806183,
+      0.001317078247666359,
+      0.0013962138909846544,
+      0.0,
+      0.002070728689432144,
+      0.0013715941458940506,
+      0.00688253715634346,
+      0.005100857466459274,
+      0.008804023265838623,
+      0.008087944239377975,
+      0.00741969421505928,
+      0.005445193499326706,
+      0.006208062171936035
+     ]
+    }
+   },
+   "MMX1": {
+    "5": {
+     "patch_size_px": 5,
+     "patch_size_m": 400,
+     "valid_pixels": 25,
+     "total_pixels": 25,
+     "temporal_coherence_median": 0.9995307326316833,
+     "temporal_coherence_min": 0.9990779161453247,
+     "velocity_median_mm_yr": -77.9385986328125,
+     "velocity_mad_mm_yr": 1.4289390014648438,
+     "velocity_iqr_mm_yr": 1.78912353515625,
+     "velocity_std_median_mm_yr": 1.4441787004470825,
+     "single_pixel_velocity_mm_yr": -78.08967590332031,
+     "timeseries_m": [
+      0.05142979696393013,
+      0.052259333431720734,
+      0.04666873812675476,
+      0.04357052221894264,
+      0.04185985028743744,
+      0.03817778080701828,
+      0.038316648453474045,
+      0.03088373690843582,
+      0.027522049844264984,
+      0.0309537835419178,
+      0.02864052727818489,
+      0.014124516397714615,
+      0.010917272418737411,
+      0.007896649651229382,
+      0.00030811107717454433,
+      0.0,
+      -0.0029837535694241524,
+      -0.00728832371532917,
+      -0.005502605810761452,
+      -0.00819799117743969,
+      -0.006910035386681557,
+      -0.016245197504758835,
+      -0.017233893275260925,
+      -0.01979369856417179,
+      -0.02294190786778927
+     ]
+    },
+    "9": {
+     "patch_size_px": 9,
+     "patch_size_m": 720,
+     "valid_pixels": 81,
+     "total_pixels": 81,
+     "temporal_coherence_median": 0.9995953440666199,
+     "temporal_coherence_min": 0.992639422416687,
+     "velocity_median_mm_yr": -76.56230926513672,
+     "velocity_mad_mm_yr": 3.2000460479736326,
+     "velocity_iqr_mm_yr": 4.239494323730469,
+     "velocity_std_median_mm_yr": 1.4487287998199463,
+     "single_pixel_velocity_mm_yr": -78.08967590332031,
+     "timeseries_m": [
+      0.05097509175539017,
+      0.05177903175354004,
+      0.045973338186740875,
+      0.042824145406484604,
+      0.04130373150110245,
+      0.0375019870698452,
+      0.03768071532249451,
+      0.030334413051605225,
+      0.027036800980567932,
+      0.030558452010154724,
+      0.028156206011772156,
+      0.013747243210673332,
+      0.010646176524460316,
+      0.007719624321907759,
+      0.0002563868183642626,
+      0.0,
+      -0.002969547174870968,
+      -0.007214833050966263,
+      -0.005434578284621239,
+      -0.008136164397001266,
+      -0.006901184096932411,
+      -0.016177382320165634,
+      -0.016989119350910187,
+      -0.019456813111901283,
+      -0.022364327684044838
+     ]
+    },
+    "13": {
+     "patch_size_px": 13,
+     "patch_size_m": 1040,
+     "valid_pixels": 169,
+     "total_pixels": 169,
+     "temporal_coherence_median": 0.9995406270027161,
+     "temporal_coherence_min": 0.9648503065109253,
+     "velocity_median_mm_yr": -74.11334991455078,
+     "velocity_mad_mm_yr": 4.712202580261231,
+     "velocity_iqr_mm_yr": 6.6635589599609375,
+     "velocity_std_median_mm_yr": 1.465327501296997,
+     "single_pixel_velocity_mm_yr": -78.08967590332031,
+     "timeseries_m": [
+      0.04991181939840317,
+      0.050657063722610474,
+      0.04479636251926422,
+      0.0416577085852623,
+      0.04004844278097153,
+      0.036477334797382355,
+      0.03647579252719879,
+      0.029447238892316818,
+      0.02606184408068657,
+      0.029770823195576668,
+      0.02747323550283909,
+      0.01341274380683899,
+      0.010322070680558681,
+      0.007497546728700399,
+      0.00023855071049183607,
+      0.0,
+      -0.0029837535694241524,
+      -0.007089108228683472,
+      -0.005209768190979958,
+      -0.008013369515538216,
+      -0.006484437733888626,
+      -0.015837784856557846,
+      -0.016583915799856186,
+      -0.018992068246006966,
+      -0.021921196952462196
+     ]
+    }
+   }
+  }
+ },
+ "comparisons": [
+  {
+   "case": "A_redundant_no_ramp",
+   "patch_size_px": 5,
+   "patch_size_m": 400,
+   "valid_px_ICMX": 25,
+   "valid_px_MMX1": 25,
+   "tcoh_median_ICMX": 0.9997357130050659,
+   "tcoh_median_MMX1": 0.9995307326316833,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 241.70450024705906,
+   "insar_diff_ci95_lo": 226.37042581427008,
+   "insar_diff_ci95_hi": 257.038574679848,
+   "gnss_minus_insar_mm_yr": 14.615714506998497,
+   "gmi_ci95_ols_lo": 2.572228817812404,
+   "gmi_ci95_ols_hi": 26.65920019618459,
+   "gmi_ci95_ar1_lo": 1.265483199206661,
+   "gmi_ci95_ar1_hi": 27.96594581479033,
+   "gmi_residual_lag1_rho": 0.05875106453257518,
+   "gmi_neff": 8.8901817150283,
+   "gmi_ci95_blockboot_lo": 8.22118094182064,
+   "gmi_ci95_blockboot_hi": 21.297047491928858,
+   "gmi_leave_one_out_min": 11.572729514985742,
+   "gmi_leave_one_out_max": 17.518150433261326,
+   "aligned_rmse_mm": 3.369655589914011,
+   "correlation": 0.9982168779114862,
+   "detrended_correlation": 0.6709796382160883,
+   "gmi_theilsen_mm_yr": 15.334377511233177,
+   "gmi_raw_gnss_mm_yr": 20.33540522066498,
+   "gmi_tol0_exact_mm_yr": 8.85680691069739,
+   "gmi_tol1_mm_yr": 14.615714506998497,
+   "gmi_tol2_mm_yr": 14.615714506998497,
+   "insar_diff_full_period_mm_yr": 229.0543670654297,
+   "insar_common_minus_full_mm_yr": 12.650133181629371,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 27.26584768533388,
+   "U95_primary_rule_mm_yr": 19.537470080179723,
+   "verdict_primary_patch": "consistent"
+  },
+  {
+   "case": "A_redundant_no_ramp",
+   "patch_size_px": 9,
+   "patch_size_m": 720,
+   "valid_px_ICMX": 81,
+   "valid_px_MMX1": 81,
+   "tcoh_median_ICMX": 0.9997780323028564,
+   "tcoh_median_MMX1": 0.9995953440666199,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 240.53986293708354,
+   "insar_diff_ci95_lo": 225.35840203221647,
+   "insar_diff_ci95_hi": 255.7213238419506,
+   "gnss_minus_insar_mm_yr": 15.780351813658996,
+   "gmi_ci95_ols_lo": 3.5563030263259123,
+   "gmi_ci95_ols_hi": 28.00440060099208,
+   "gmi_ci95_ar1_lo": 2.3032824589527494,
+   "gmi_ci95_ar1_hi": 29.257421168365244,
+   "gmi_residual_lag1_rho": 0.055778362859221886,
+   "gmi_neff": 8.943369843114327,
+   "gmi_ci95_blockboot_lo": 9.179186529978788,
+   "gmi_ci95_blockboot_hi": 22.580692275875215,
+   "gmi_leave_one_out_min": 12.766970050203478,
+   "gmi_leave_one_out_max": 18.60671697613725,
+   "aligned_rmse_mm": 3.52969353652795,
+   "correlation": 0.9981552598050962,
+   "detrended_correlation": 0.6568488816151385,
+   "gmi_theilsen_mm_yr": 16.176022724698093,
+   "gmi_raw_gnss_mm_yr": 21.500042529913948,
+   "gmi_tol0_exact_mm_yr": 9.995498662379214,
+   "gmi_tol1_mm_yr": 15.780351813658996,
+   "gmi_tol2_mm_yr": 15.780351813658996,
+   "insar_diff_full_period_mm_yr": 227.72460174560547,
+   "insar_common_minus_full_mm_yr": 12.815261191478072,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 28.5956130051581,
+   "U95_primary_rule_mm_yr": 19.537470080179723,
+   "verdict_primary_patch": "consistent"
+  },
+  {
+   "case": "A_redundant_no_ramp",
+   "patch_size_px": 13,
+   "patch_size_m": 1040,
+   "valid_px_ICMX": 169,
+   "valid_px_MMX1": 169,
+   "tcoh_median_ICMX": 0.9997879862785339,
+   "tcoh_median_MMX1": 0.9995406270027161,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 238.37908347680533,
+   "insar_diff_ci95_lo": 223.38479685175525,
+   "insar_diff_ci95_hi": 253.3733701018554,
+   "gnss_minus_insar_mm_yr": 17.94113127854642,
+   "gmi_ci95_ols_lo": 5.72292850651074,
+   "gmi_ci95_ols_hi": 30.159334050582096,
+   "gmi_ci95_ar1_lo": 4.6376403120729215,
+   "gmi_ci95_ar1_hi": 31.244622245019915,
+   "gmi_residual_lag1_rho": 0.04888525553795723,
+   "gmi_neff": 9.067862661242488,
+   "gmi_ci95_blockboot_lo": 11.30661323325456,
+   "gmi_ci95_blockboot_hi": 25.016958728621088,
+   "gmi_leave_one_out_min": 15.022235307090643,
+   "gmi_leave_one_out_max": 20.67513918154873,
+   "aligned_rmse_mm": 3.7906463795463217,
+   "correlation": 0.9981391722573539,
+   "detrended_correlation": 0.6521749847124154,
+   "gmi_theilsen_mm_yr": 18.60847112612435,
+   "gmi_raw_gnss_mm_yr": 23.66082198919302,
+   "gmi_tol0_exact_mm_yr": 12.173207924914456,
+   "gmi_tol1_mm_yr": 17.94113127854642,
+   "gmi_tol2_mm_yr": 17.94113127854642,
+   "insar_diff_full_period_mm_yr": 225.67698669433594,
+   "insar_common_minus_full_mm_yr": 12.702096782469397,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 30.64322805642763,
+   "U95_primary_rule_mm_yr": 19.537470080179723,
+   "verdict_primary_patch": "consistent"
+  },
+  {
+   "case": "B_redundant_linear_ramp",
+   "patch_size_px": 5,
+   "patch_size_m": 400,
+   "valid_px_ICMX": 25,
+   "valid_px_MMX1": 25,
+   "tcoh_median_ICMX": 0.9997357130050659,
+   "tcoh_median_MMX1": 0.9995307326316833,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 99.14174227541758,
+   "insar_diff_ci95_lo": 90.77144618978718,
+   "insar_diff_ci95_hi": 107.51203836104798,
+   "gnss_minus_insar_mm_yr": 157.17847247933634,
+   "gmi_ci95_ols_lo": 147.59445678315655,
+   "gmi_ci95_ols_hi": 166.76248817551613,
+   "gmi_ci95_ar1_lo": 147.59445678315655,
+   "gmi_ci95_ar1_hi": 166.76248817551613,
+   "gmi_residual_lag1_rho": 0.0,
+   "gmi_neff": 10.0,
+   "gmi_ci95_blockboot_lo": 150.9507205024777,
+   "gmi_ci95_blockboot_hi": 162.16363946044353,
+   "gmi_leave_one_out_min": 155.62890616865843,
+   "gmi_leave_one_out_max": 159.25865351255197,
+   "aligned_rmse_mm": 25.558416452388503,
+   "correlation": 0.9977065669999079,
+   "detrended_correlation": 0.7605552558079156,
+   "gmi_theilsen_mm_yr": 155.32659663531248,
+   "gmi_raw_gnss_mm_yr": 162.89816319285902,
+   "gmi_tol0_exact_mm_yr": 155.2859477005144,
+   "gmi_tol1_mm_yr": 157.17847247933634,
+   "gmi_tol2_mm_yr": 157.17847247933634,
+   "insar_diff_full_period_mm_yr": 95.59899520874023,
+   "insar_common_minus_full_mm_yr": 3.54274706667735,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 160.72121954202333,
+   "U95_primary_rule_mm_yr": 16.274979272467284,
+   "verdict_primary_patch": "rejected"
+  },
+  {
+   "case": "B_redundant_linear_ramp",
+   "patch_size_px": 9,
+   "patch_size_m": 720,
+   "valid_px_ICMX": 81,
+   "valid_px_MMX1": 81,
+   "tcoh_median_ICMX": 0.9997780323028564,
+   "tcoh_median_MMX1": 0.9995953440666199,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 98.07770591896242,
+   "insar_diff_ci95_lo": 89.97767206734922,
+   "insar_diff_ci95_hi": 106.17773977057563,
+   "gnss_minus_insar_mm_yr": 158.24250883369848,
+   "gmi_ci95_ols_lo": 148.47987290795345,
+   "gmi_ci95_ols_hi": 168.0051447594435,
+   "gmi_ci95_ar1_lo": 148.47987290795345,
+   "gmi_ci95_ar1_hi": 168.0051447594435,
+   "gmi_residual_lag1_rho": 0.0,
+   "gmi_neff": 10.0,
+   "gmi_ci95_blockboot_lo": 151.59019819281093,
+   "gmi_ci95_blockboot_hi": 163.3489160065105,
+   "gmi_leave_one_out_min": 156.60833884006325,
+   "gmi_leave_one_out_max": 160.3251781042066,
+   "aligned_rmse_mm": 25.73313391606077,
+   "correlation": 0.9977578193686605,
+   "detrended_correlation": 0.751704700950642,
+   "gmi_theilsen_mm_yr": 156.8128496560418,
+   "gmi_raw_gnss_mm_yr": 163.96219954995345,
+   "gmi_tol0_exact_mm_yr": 156.46244711683374,
+   "gmi_tol1_mm_yr": 158.24250883369848,
+   "gmi_tol2_mm_yr": 158.24250883369848,
+   "insar_diff_full_period_mm_yr": 94.18802261352539,
+   "insar_common_minus_full_mm_yr": 3.889683305437032,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 162.13219213723818,
+   "U95_primary_rule_mm_yr": 16.274979272467284,
+   "verdict_primary_patch": "rejected"
+  },
+  {
+   "case": "B_redundant_linear_ramp",
+   "patch_size_px": 13,
+   "patch_size_m": 1040,
+   "valid_px_ICMX": 169,
+   "valid_px_MMX1": 169,
+   "tcoh_median_ICMX": 0.9997879862785339,
+   "tcoh_median_MMX1": 0.9995406270027161,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 95.9510954455526,
+   "insar_diff_ci95_lo": 87.97820092143398,
+   "insar_diff_ci95_hi": 103.92398996967121,
+   "gnss_minus_insar_mm_yr": 160.36911930559705,
+   "gmi_ci95_ols_lo": 150.405354453762,
+   "gmi_ci95_ols_hi": 170.33288415743212,
+   "gmi_ci95_ar1_lo": 150.405354453762,
+   "gmi_ci95_ar1_hi": 170.33288415743212,
+   "gmi_residual_lag1_rho": 0.0,
+   "gmi_neff": 10.0,
+   "gmi_ci95_blockboot_lo": 153.78429242915558,
+   "gmi_ci95_blockboot_hi": 165.5655592806574,
+   "gmi_leave_one_out_min": 158.68379936091515,
+   "gmi_leave_one_out_max": 162.40480639028948,
+   "aligned_rmse_mm": 26.080012921694117,
+   "correlation": 0.9976274480414166,
+   "detrended_correlation": 0.7372568841955167,
+   "gmi_theilsen_mm_yr": 159.05929741339392,
+   "gmi_raw_gnss_mm_yr": 166.08881002213963,
+   "gmi_tol0_exact_mm_yr": 158.47135934040475,
+   "gmi_tol1_mm_yr": 160.36911930559705,
+   "gmi_tol2_mm_yr": 160.36911930559705,
+   "insar_diff_full_period_mm_yr": 91.82097244262695,
+   "insar_common_minus_full_mm_yr": 4.130123002925643,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 164.49924230813662,
+   "U95_primary_rule_mm_yr": 16.274979272467284,
+   "verdict_primary_patch": "rejected"
+  },
+  {
+   "case": "C_ERA5_no_ramp",
+   "patch_size_px": 5,
+   "patch_size_m": 400,
+   "valid_px_ICMX": 25,
+   "valid_px_MMX1": 25,
+   "tcoh_median_ICMX": 0.9997357130050659,
+   "tcoh_median_MMX1": 0.9995307326316833,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 235.63752111041006,
+   "insar_diff_ci95_lo": 219.34483487195328,
+   "insar_diff_ci95_hi": 251.93020734886684,
+   "gnss_minus_insar_mm_yr": 20.68269364365627,
+   "gmi_ci95_ols_lo": 6.3658363709470995,
+   "gmi_ci95_ols_hi": 34.999550916365436,
+   "gmi_ci95_ar1_lo": 5.038975797599797,
+   "gmi_ci95_ar1_hi": 36.32641148971275,
+   "gmi_residual_lag1_rho": 0.050842792842910114,
+   "gmi_neff": 9.032342550394965,
+   "gmi_ci95_blockboot_lo": 13.368552907213726,
+   "gmi_ci95_blockboot_hi": 28.100411137943606,
+   "gmi_leave_one_out_min": 17.748290272417456,
+   "gmi_leave_one_out_max": 25.511632184285794,
+   "aligned_rmse_mm": 4.399563102070174,
+   "correlation": 0.9973777672026558,
+   "detrended_correlation": 0.5677814723369081,
+   "gmi_theilsen_mm_yr": 19.619093586674687,
+   "gmi_raw_gnss_mm_yr": 26.40238435459048,
+   "gmi_tol0_exact_mm_yr": 15.083159791284118,
+   "gmi_tol1_mm_yr": 20.68269364365627,
+   "gmi_tol2_mm_yr": 20.68269364365627,
+   "insar_diff_full_period_mm_yr": 228.56681060791016,
+   "insar_common_minus_full_mm_yr": 7.070710502499907,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 27.753404142853412,
+   "U95_primary_rule_mm_yr": 21.183386691671082,
+   "verdict_primary_patch": "rejected"
+  },
+  {
+   "case": "C_ERA5_no_ramp",
+   "patch_size_px": 9,
+   "patch_size_m": 720,
+   "valid_px_ICMX": 81,
+   "valid_px_MMX1": 81,
+   "tcoh_median_ICMX": 0.9997780323028564,
+   "tcoh_median_MMX1": 0.9995953440666199,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 234.31428448916046,
+   "insar_diff_ci95_lo": 218.1366866984677,
+   "insar_diff_ci95_hi": 250.4918822798532,
+   "gnss_minus_insar_mm_yr": 22.005930264448526,
+   "gmi_ci95_ols_lo": 7.581617221089202,
+   "gmi_ci95_ols_hi": 36.43024330780785,
+   "gmi_ci95_ar1_lo": 6.199764307038773,
+   "gmi_ci95_ar1_hi": 37.812096221858276,
+   "gmi_residual_lag1_rho": 0.052419798336593264,
+   "gmi_neff": 9.003823409262242,
+   "gmi_ci95_blockboot_lo": 14.497732164745344,
+   "gmi_ci95_blockboot_hi": 29.541838158625566,
+   "gmi_leave_one_out_min": 19.0775228432661,
+   "gmi_leave_one_out_max": 26.76033584111792,
+   "aligned_rmse_mm": 4.578603215217697,
+   "correlation": 0.9973215983659819,
+   "detrended_correlation": 0.5570277933756997,
+   "gmi_theilsen_mm_yr": 20.66171050892779,
+   "gmi_raw_gnss_mm_yr": 27.725620978258814,
+   "gmi_tol0_exact_mm_yr": 16.370112128774423,
+   "gmi_tol1_mm_yr": 22.005930264448526,
+   "gmi_tol2_mm_yr": 22.005930264448526,
+   "insar_diff_full_period_mm_yr": 227.30031204223633,
+   "insar_common_minus_full_mm_yr": 7.013972446924129,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 29.01990270852724,
+   "U95_primary_rule_mm_yr": 21.183386691671082,
+   "verdict_primary_patch": "rejected"
+  },
+  {
+   "case": "C_ERA5_no_ramp",
+   "patch_size_px": 13,
+   "patch_size_m": 1040,
+   "valid_px_ICMX": 169,
+   "valid_px_MMX1": 169,
+   "tcoh_median_ICMX": 0.9997879862785339,
+   "tcoh_median_MMX1": 0.9995406270027161,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 232.01187368641388,
+   "insar_diff_ci95_lo": 216.05446261234857,
+   "insar_diff_ci95_hi": 247.96928476047918,
+   "gnss_minus_insar_mm_yr": 24.3083410675478,
+   "gmi_ci95_ols_lo": 9.866326358563098,
+   "gmi_ci95_ols_hi": 38.75035577653251,
+   "gmi_ci95_ar1_lo": 8.758338500843388,
+   "gmi_ci95_ar1_hi": 39.85834363425221,
+   "gmi_residual_lag1_rho": 0.042650747680715605,
+   "gmi_neff": 9.181878538415889,
+   "gmi_ci95_blockboot_lo": 16.716976321825683,
+   "gmi_ci95_blockboot_hi": 32.20555264254978,
+   "gmi_leave_one_out_min": 21.361455226572918,
+   "gmi_leave_one_out_max": 28.987932029849617,
+   "aligned_rmse_mm": 4.877262018669202,
+   "correlation": 0.9972850443044393,
+   "detrended_correlation": 0.5480440318531274,
+   "gmi_theilsen_mm_yr": 22.62388000930607,
+   "gmi_raw_gnss_mm_yr": 30.028031780926675,
+   "gmi_tol0_exact_mm_yr": 18.67739132566214,
+   "gmi_tol1_mm_yr": 24.3083410675478,
+   "gmi_tol2_mm_yr": 24.3083410675478,
+   "insar_diff_full_period_mm_yr": 225.14762496948242,
+   "insar_common_minus_full_mm_yr": 6.864248716931456,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 31.172589781281147,
+   "U95_primary_rule_mm_yr": 21.183386691671082,
+   "verdict_primary_patch": "rejected"
+  },
+  {
+   "case": "D_ERA5_linear_ramp",
+   "patch_size_px": 5,
+   "patch_size_m": 400,
+   "valid_px_ICMX": 25,
+   "valid_px_MMX1": 25,
+   "tcoh_median_ICMX": 0.9997357130050659,
+   "tcoh_median_MMX1": 0.9995307326316833,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 100.53863272546674,
+   "insar_diff_ci95_lo": 92.78872257164541,
+   "insar_diff_ci95_hi": 108.28854287928809,
+   "gnss_minus_insar_mm_yr": 155.7815820267189,
+   "gmi_ci95_ols_lo": 146.53347244775446,
+   "gmi_ci95_ols_hi": 165.02969160568335,
+   "gmi_ci95_ar1_lo": 146.53347244775446,
+   "gmi_ci95_ar1_hi": 165.02969160568335,
+   "gmi_residual_lag1_rho": 0.0,
+   "gmi_neff": 10.0,
+   "gmi_ci95_blockboot_lo": 149.29818146111518,
+   "gmi_ci95_blockboot_hi": 160.98796353559348,
+   "gmi_leave_one_out_min": 154.34775906624054,
+   "gmi_leave_one_out_max": 157.3385834764546,
+   "aligned_rmse_mm": 25.327601049831095,
+   "correlation": 0.998407719040243,
+   "detrended_correlation": 0.8048120260175301,
+   "gmi_theilsen_mm_yr": 153.86991360201836,
+   "gmi_raw_gnss_mm_yr": 161.50127274311765,
+   "gmi_tol0_exact_mm_yr": 154.22594781545638,
+   "gmi_tol1_mm_yr": 155.7815820267189,
+   "gmi_tol2_mm_yr": 155.7815820267189,
+   "insar_diff_full_period_mm_yr": 96.2760238647461,
+   "insar_common_minus_full_mm_yr": 4.262608860720647,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 160.04419088601747,
+   "U95_primary_rule_mm_yr": 16.07776673801315,
+   "verdict_primary_patch": "rejected"
+  },
+  {
+   "case": "D_ERA5_linear_ramp",
+   "patch_size_px": 9,
+   "patch_size_m": 720,
+   "valid_px_ICMX": 81,
+   "valid_px_MMX1": 81,
+   "tcoh_median_ICMX": 0.9997780323028564,
+   "tcoh_median_MMX1": 0.9995953440666199,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 99.45837776056678,
+   "insar_diff_ci95_lo": 92.00741809306918,
+   "insar_diff_ci95_hi": 106.90933742806438,
+   "gnss_minus_insar_mm_yr": 156.86183699298542,
+   "gmi_ci95_ols_lo": 147.38097847242278,
+   "gmi_ci95_ols_hi": 166.34269551354805,
+   "gmi_ci95_ar1_lo": 147.38097847242278,
+   "gmi_ci95_ar1_hi": 166.34269551354805,
+   "gmi_residual_lag1_rho": 0.0,
+   "gmi_neff": 10.0,
+   "gmi_ci95_blockboot_lo": 149.91426250979725,
+   "gmi_ci95_blockboot_hi": 162.28024337764157,
+   "gmi_leave_one_out_min": 155.3359434331772,
+   "gmi_leave_one_out_max": 158.45905468783408,
+   "aligned_rmse_mm": 25.505690743885403,
+   "correlation": 0.9984481944160288,
+   "detrended_correlation": 0.7952054846054774,
+   "gmi_theilsen_mm_yr": 154.7005695777513,
+   "gmi_raw_gnss_mm_yr": 162.5815277067957,
+   "gmi_tol0_exact_mm_yr": 155.37189961235572,
+   "gmi_tol1_mm_yr": 156.86183699298542,
+   "gmi_tol2_mm_yr": 156.86183699298542,
+   "insar_diff_full_period_mm_yr": 94.9316177368164,
+   "insar_common_minus_full_mm_yr": 4.52676002375037,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 161.38859701394716,
+   "U95_primary_rule_mm_yr": 16.07776673801315,
+   "verdict_primary_patch": "rejected"
+  },
+  {
+   "case": "D_ERA5_linear_ramp",
+   "patch_size_px": 13,
+   "patch_size_m": 1040,
+   "valid_px_ICMX": 169,
+   "valid_px_MMX1": 169,
+   "tcoh_median_ICMX": 0.9997879862785339,
+   "tcoh_median_MMX1": 0.9995406270027161,
+   "common_epochs": 10,
+   "common_start": "20240418",
+   "common_end": "20241003",
+   "common_days": 168,
+   "gnss_diff_mm_yr": 256.32021475076357,
+   "gnss_diff_ci95_lo": 242.05994282725345,
+   "gnss_diff_ci95_hi": 270.58048667427363,
+   "insar_diff_common_mm_yr": 97.35380744904967,
+   "insar_diff_ci95_lo": 90.00803600545655,
+   "insar_diff_ci95_hi": 104.69957889264279,
+   "gnss_minus_insar_mm_yr": 158.96640730258991,
+   "gmi_ci95_ols_lo": 149.26897077811697,
+   "gmi_ci95_ols_hi": 168.66384382706283,
+   "gmi_ci95_ar1_lo": 149.26897077811697,
+   "gmi_ci95_ar1_hi": 168.66384382706283,
+   "gmi_residual_lag1_rho": 0.0,
+   "gmi_neff": 10.0,
+   "gmi_ci95_blockboot_lo": 152.01848608461523,
+   "gmi_ci95_blockboot_hi": 164.42220011596459,
+   "gmi_leave_one_out_min": 157.38688702397968,
+   "gmi_leave_one_out_max": 160.49668625904206,
+   "aligned_rmse_mm": 25.84921356372493,
+   "correlation": 0.9983239218524089,
+   "detrended_correlation": 0.7793376255407671,
+   "gmi_theilsen_mm_yr": 156.21500087064095,
+   "gmi_raw_gnss_mm_yr": 164.6860980161126,
+   "gmi_tol0_exact_mm_yr": 157.46576656665806,
+   "gmi_tol1_mm_yr": 158.96640730258991,
+   "gmi_tol2_mm_yr": 158.96640730258991,
+   "insar_diff_full_period_mm_yr": 92.48265838623047,
+   "insar_common_minus_full_mm_yr": 4.8711490628192,
+   "gnss_minus_insar_full_period_NONEQUIVALENT_mm_yr": 163.8375563645331,
+   "U95_primary_rule_mm_yr": 16.07776673801315,
+   "verdict_primary_patch": "rejected"
+  }
+ ],
+ "decision": {
+  "A_redundant_no_ramp": {
+   "gnss_minus_insar_mm_yr": 15.780351813658996,
+   "stat_halfwidth_ar1": 13.477069354706247,
+   "sys_cadence": 11.451521806743386,
+   "sys_outlier": 5.7196907168302005,
+   "sys_matching": 5.784853151279782,
+   "sys_patch": 1.6627083851268623,
+   "sys_total": 14.14501109021678,
+   "U95": 19.537470080179723,
+   "z": 1.5830857029001328,
+   "verdict": "consistent",
+   "icmx_bias_needed_mm_yr": 15.780351813658996,
+   "icmx_bias_needed_mm_over_window": 7.258313770553624
+  },
+  "B_redundant_linear_ramp": {
+   "gnss_minus_insar_mm_yr": 158.24250883369848,
+   "stat_halfwidth_ar1": 9.76263592574503,
+   "sys_cadence": 11.451521806743386,
+   "sys_outlier": 5.7196907168302005,
+   "sys_matching": 1.7800617168647364,
+   "sys_patch": 1.5953234149324942,
+   "sys_total": 13.021746814486612,
+   "U95": 16.274979272467284,
+   "z": 19.05718662503891,
+   "verdict": "rejected",
+   "icmx_bias_needed_mm_yr": 158.24250883369848,
+   "icmx_bias_needed_mm_over_window": 72.78505539784078
+  },
+  "C_ERA5_no_ramp": {
+   "gnss_minus_insar_mm_yr": 22.005930264448526,
+   "stat_halfwidth_ar1": 15.806165957409751,
+   "sys_cadence": 11.451521806743386,
+   "sys_outlier": 5.7196907168302005,
+   "sys_matching": 5.6358181356741035,
+   "sys_patch": 1.8128237119980923,
+   "sys_total": 14.103226207350167,
+   "U95": 21.183386691671082,
+   "z": 2.0361061215616516,
+   "verdict": "rejected",
+   "icmx_bias_needed_mm_yr": 22.005930264448526,
+   "icmx_bias_needed_mm_over_window": 10.121824187343881
+  },
+  "D_ERA5_linear_ramp": {
+   "gnss_minus_insar_mm_yr": 156.86183699298542,
+   "stat_halfwidth_ar1": 9.480858520562634,
+   "sys_cadence": 11.451521806743386,
+   "sys_outlier": 5.7196907168302005,
+   "sys_matching": 1.4899373806296978,
+   "sys_patch": 1.5924126382085362,
+   "sys_total": 12.984910665654843,
+   "U95": 16.07776673801315,
+   "z": 19.122630991985968,
+   "verdict": "rejected",
+   "icmx_bias_needed_mm_yr": 156.86183699298542,
+   "icmx_bias_needed_mm_over_window": 72.15000305221506
+  }
+ },
+ "reliability": {
+  "ICMX": {
+   "scatter_2024": {
+    "east": {
+     "detrended_robust_std_mm": 1.6493572208296428,
+     "day_to_day_robust_std_mm": 1.0169058189049123
+    },
+    "north": {
+     "detrended_robust_std_mm": 1.788648148952052,
+     "day_to_day_robust_std_mm": 0.9424721155701398
+    },
+    "up": {
+     "detrended_robust_std_mm": 5.396626134965481,
+     "day_to_day_robust_std_mm": 3.7436811109360475
+    },
+    "los": {
+     "detrended_robust_std_mm": 4.172006119193975,
+     "day_to_day_robust_std_mm": 3.074971299069969
+    }
+   },
+   "annual_rates": {
+    "2017": {
+     "n": 141,
+     "los_theilsen_mm_yr": -15.965659138233065,
+     "up_theilsen_mm_yr": -7.848958410502879,
+     "east_theilsen_mm_yr": -17.357745313054807
+    },
+    "2018": {
+     "n": 337,
+     "los_theilsen_mm_yr": -14.913640327640346,
+     "up_theilsen_mm_yr": -18.086956265901705,
+     "east_theilsen_mm_yr": -0.46425816137528525
+    },
+    "2019": {
+     "n": 324,
+     "los_theilsen_mm_yr": -22.012594844135783,
+     "up_theilsen_mm_yr": -22.608616985534194,
+     "east_theilsen_mm_yr": -7.532220146919766
+    },
+    "2020": {
+     "n": 335,
+     "los_theilsen_mm_yr": -23.470971321104653,
+     "up_theilsen_mm_yr": -27.83710377381563,
+     "east_theilsen_mm_yr": 0.15360981308436053
+    },
+    "2021": {
+     "n": 359,
+     "los_theilsen_mm_yr": -36.06875500648335,
+     "up_theilsen_mm_yr": -45.43262755241211,
+     "east_theilsen_mm_yr": 4.2369000059124975
+    },
+    "2022": {
+     "n": 365,
+     "los_theilsen_mm_yr": -21.419899761278852,
+     "up_theilsen_mm_yr": -19.959463518133806,
+     "east_theilsen_mm_yr": -8.730107935344503
+    },
+    "2023": {
+     "n": 365,
+     "los_theilsen_mm_yr": -20.393988932890252,
+     "up_theilsen_mm_yr": -20.836642857872842,
+     "east_theilsen_mm_yr": -5.601884256541132
+    },
+    "2024": {
+     "n": 362,
+     "los_theilsen_mm_yr": -41.04816524856508,
+     "up_theilsen_mm_yr": -48.31399078389648,
+     "east_theilsen_mm_yr": 0.4870000000580127
+    },
+    "2025": {
+     "n": 323,
+     "los_theilsen_mm_yr": -43.3831039154572,
+     "up_theilsen_mm_yr": -54.30397857155152,
+     "east_theilsen_mm_yr": 4.64410847084548
+    }
+   }
+  },
+  "MMX1": {
+   "scatter_2024": {
+    "east": {
+     "detrended_robust_std_mm": 1.6760926766985902,
+     "day_to_day_robust_std_mm": 1.0357762353903321
+    },
+    "north": {
+     "detrended_robust_std_mm": 2.276443832460791,
+     "day_to_day_robust_std_mm": 0.980213481533334
+    },
+    "up": {
+     "detrended_robust_std_mm": 5.035693242660545,
+     "day_to_day_robust_std_mm": 3.6710627440435175
+    },
+    "los": {
+     "detrended_robust_std_mm": 3.851361395954154,
+     "day_to_day_robust_std_mm": 3.167986813541724
+    }
+   },
+   "annual_rates": {
+    "2008": {
+     "n": 196,
+     "los_theilsen_mm_yr": -224.85692897754285,
+     "up_theilsen_mm_yr": -264.0581949433625,
+     "east_theilsen_mm_yr": 2.364819559296755
+    },
+    "2009": {
+     "n": 363,
+     "los_theilsen_mm_yr": -228.89837756294855,
+     "up_theilsen_mm_yr": -263.57181484996,
+     "east_theilsen_mm_yr": -7.086230468809519
+    },
+    "2010": {
+     "n": 363,
+     "los_theilsen_mm_yr": -240.0402113477169,
+     "up_theilsen_mm_yr": -276.4759874988783,
+     "east_theilsen_mm_yr": -8.284534090754715
+    },
+    "2011": {
+     "n": 353,
+     "los_theilsen_mm_yr": -227.09077501801318,
+     "up_theilsen_mm_yr": -262.2244930212741,
+     "east_theilsen_mm_yr": -6.32108123450769
+    },
+    "2012": {
+     "n": 355,
+     "los_theilsen_mm_yr": -233.66025184879936,
+     "up_theilsen_mm_yr": -271.16160001298795,
+     "east_theilsen_mm_yr": -5.098066901988544
+    },
+    "2013": {
+     "n": 362,
+     "los_theilsen_mm_yr": -237.64555004107444,
+     "up_theilsen_mm_yr": -277.850254587498,
+     "east_theilsen_mm_yr": 2.1554894364412513
+    },
+    "2014": {
+     "n": 363,
+     "los_theilsen_mm_yr": -241.31934274724955,
+     "up_theilsen_mm_yr": -277.63191393393726,
+     "east_theilsen_mm_yr": -10.62268749970959
+    },
+    "2015": {
+     "n": 358,
+     "los_theilsen_mm_yr": -224.72650031101824,
+     "up_theilsen_mm_yr": -259.25515579710157,
+     "east_theilsen_mm_yr": -6.644204198498112
+    },
+    "2016": {
+     "n": 366,
+     "los_theilsen_mm_yr": -220.20783154380297,
+     "up_theilsen_mm_yr": -256.13288586952467,
+     "east_theilsen_mm_yr": -2.5956063817263986
+    },
+    "2017": {
+     "n": 363,
+     "los_theilsen_mm_yr": -265.45488727668913,
+     "up_theilsen_mm_yr": -308.45677370741123,
+     "east_theilsen_mm_yr": -3.953644898146361
+    },
+    "2018": {
+     "n": 334,
+     "los_theilsen_mm_yr": -261.4700687801362,
+     "up_theilsen_mm_yr": -304.6057091438367,
+     "east_theilsen_mm_yr": -4.735655171912342
+    },
+    "2019": {
+     "n": 357,
+     "los_theilsen_mm_yr": -232.69566561958325,
+     "up_theilsen_mm_yr": -269.56773577378266,
+     "east_theilsen_mm_yr": -5.500070998649854
+    },
+    "2020": {
+     "n": 339,
+     "los_theilsen_mm_yr": -221.6731018075064,
+     "up_theilsen_mm_yr": -258.9007722780849,
+     "east_theilsen_mm_yr": -2.0593882979738356
+    },
+    "2021": {
+     "n": 365,
+     "los_theilsen_mm_yr": -237.56792797044417,
+     "up_theilsen_mm_yr": -276.55106215221736,
+     "east_theilsen_mm_yr": -4.156672693706224
+    },
+    "2022": {
+     "n": 357,
+     "los_theilsen_mm_yr": -255.6143737109761,
+     "up_theilsen_mm_yr": -293.9352707577227,
+     "east_theilsen_mm_yr": -9.509319734506343
+    },
+    "2023": {
+     "n": 255,
+     "los_theilsen_mm_yr": -262.7171285633306,
+     "up_theilsen_mm_yr": -302.96831923053037,
+     "east_theilsen_mm_yr": -7.562823529858232
+    },
+    "2024": {
+     "n": 137,
+     "los_theilsen_mm_yr": -303.119720411129,
+     "up_theilsen_mm_yr": -364.7396326271517,
+     "east_theilsen_mm_yr": 13.073018469311034
+    },
+    "2025": {
+     "n": 90,
+     "los_theilsen_mm_yr": -199.7319339819884,
+     "up_theilsen_mm_yr": -230.10750000037208,
+     "east_theilsen_mm_yr": -5.44744285525342
+    },
+    "2026": {
+     "n": 222,
+     "los_theilsen_mm_yr": -231.68121860101962,
+     "up_theilsen_mm_yr": -266.9346203705513,
+     "east_theilsen_mm_yr": -9.805688372057375
+    }
+   }
+  },
+  "MXTX": {
+   "scatter_2024": {
+    "east": {
+     "detrended_robust_std_mm": 2.6032287002403334,
+     "day_to_day_robust_std_mm": 1.0336795226064202
+    },
+    "north": {
+     "detrended_robust_std_mm": 3.5755188903305677,
+     "day_to_day_robust_std_mm": 0.7621553748898803
+    },
+    "up": {
+     "detrended_robust_std_mm": 4.582300871347934,
+     "day_to_day_robust_std_mm": 2.7079048745922414
+    },
+    "los": {
+     "detrended_robust_std_mm": 3.363331756729167,
+     "day_to_day_robust_std_mm": 2.3732873640889554
+    }
+   },
+   "annual_rates": null
+  },
+  "MXTO": {
+   "scatter_2024": {
+    "east": {
+     "detrended_robust_std_mm": 1.5209132821014462,
+     "day_to_day_robust_std_mm": 1.0756137830520334
+    },
+    "north": {
+     "detrended_robust_std_mm": 2.541262027155608,
+     "day_to_day_robust_std_mm": 0.9309403501982618
+    },
+    "up": {
+     "detrended_robust_std_mm": 6.713489085123819,
+     "day_to_day_robust_std_mm": 2.455250956003343
+    },
+    "los": {
+     "detrended_robust_std_mm": 5.258947160298703,
+     "day_to_day_robust_std_mm": 2.2558382291315153
+    }
+   },
+   "annual_rates": null
+  },
+  "TOL2": {
+   "scatter_2024": {
+    "east": {
+     "detrended_robust_std_mm": 1.5950277417472534,
+     "day_to_day_robust_std_mm": 1.0504532267846656
+    },
+    "north": {
+     "detrended_robust_std_mm": 2.2204946734942497,
+     "day_to_day_robust_std_mm": 0.8376371304581811
+    },
+    "up": {
+     "detrended_robust_std_mm": 5.464385539394834,
+     "day_to_day_robust_std_mm": 3.159746532443119
+    },
+    "los": {
+     "detrended_robust_std_mm": 4.320689593849238,
+     "day_to_day_robust_std_mm": 2.9176927343343797
+    }
+   },
+   "annual_rates": null
+  }
+ },
+ "regional": {
+  "per_station": {
+   "ICMX": {
+    "n": 362,
+    "start": "2024-01-01",
+    "end": "2024-12-31",
+    "inside_aoi": true,
+    "angle_source": "station pixel",
+    "east_mm_yr": 0.634563879172001,
+    "east_ci95_mm_yr": 0.6094271498623103,
+    "north_mm_yr": 4.186063165554533,
+    "north_ci95_mm_yr": 0.6117047735997434,
+    "up_mm_yr": -49.17341463979311,
+    "up_ci95_mm_yr": 1.9054551238861979,
+    "los_mm_yr": -41.69928882093362,
+    "los_ci95_mm_yr": 1.5326622209699363
+   },
+   "MMX1": {
+    "n": 133,
+    "start": "2024-04-16",
+    "end": "2024-10-10",
+    "inside_aoi": true,
+    "angle_source": "station pixel",
+    "east_mm_yr": 13.617044785651522,
+    "east_ci95_mm_yr": 2.5221673495175803,
+    "north_mm_yr": -2.484087614285611,
+    "north_ci95_mm_yr": 2.6036181652917865,
+    "up_mm_yr": -363.98570111264763,
+    "up_ci95_mm_yr": 5.247469330138279,
+    "los_mm_yr": -302.67749980380023,
+    "los_ci95_mm_yr": 4.168198869767179
+   },
+   "MXTX": {
+    "n": 356,
+    "start": "2024-01-01",
+    "end": "2024-12-31",
+    "inside_aoi": false,
+    "angle_source": "nearest raster edge pixel (diagnostic only)",
+    "east_mm_yr": -3.9791865770611636,
+    "east_ci95_mm_yr": 0.82671183306185,
+    "north_mm_yr": 2.5444300918685725,
+    "north_ci95_mm_yr": 1.160533026018474,
+    "up_mm_yr": -26.0500675914453,
+    "up_ci95_mm_yr": 1.5922370008368283,
+    "los_mm_yr": -24.62956053877657,
+    "los_ci95_mm_yr": 1.240504269476775
+   },
+   "MXTO": {
+    "n": 356,
+    "start": "2024-01-01",
+    "end": "2024-12-31",
+    "inside_aoi": false,
+    "angle_source": "nearest raster edge pixel (diagnostic only)",
+    "east_mm_yr": -2.3941463825692084,
+    "east_ci95_mm_yr": 0.5652027495336535,
+    "north_mm_yr": -0.34471205970014335,
+    "north_ci95_mm_yr": 0.8799109700375325,
+    "up_mm_yr": -51.78763948730038,
+    "up_ci95_mm_yr": 2.099872119777769,
+    "los_mm_yr": -44.95681395085875,
+    "los_ci95_mm_yr": 1.669983510068408
+   },
+   "TOL2": {
+    "n": 366,
+    "start": "2024-01-01",
+    "end": "2024-12-31",
+    "inside_aoi": false,
+    "angle_source": "nearest raster edge pixel (diagnostic only)",
+    "east_mm_yr": -3.949395936766479,
+    "east_ci95_mm_yr": 0.5752018032930387,
+    "north_mm_yr": -0.3694353229899961,
+    "north_ci95_mm_yr": 0.8317035784512115,
+    "up_mm_yr": -16.953936003106524,
+    "up_ci95_mm_yr": 1.812515871648199,
+    "los_mm_yr": -16.34247100397397,
+    "los_ci95_mm_yr": 1.4931344210186996
+   }
+  },
+  "summary": {
+   "shared_days": 131,
+   "shared_start": "2024-04-16",
+   "shared_end": "2024-10-10",
+   "residual_correlation": {
+    "ICMX": {
+     "ICMX": 1.0,
+     "MMX1": 0.3610501279497478,
+     "MXTX": 0.19181870614229082,
+     "MXTO": 0.21396243309256482,
+     "TOL2": 0.284328236081958
+    },
+    "MMX1": {
+     "ICMX": 0.3610501279497478,
+     "MMX1": 1.0,
+     "MXTX": 0.24594728937203394,
+     "MXTO": 0.3022464318349268,
+     "TOL2": 0.17417945075656663
+    },
+    "MXTX": {
+     "ICMX": 0.19181870614229082,
+     "MMX1": 0.24594728937203394,
+     "MXTX": 1.0,
+     "MXTO": 0.4600208962885735,
+     "TOL2": 0.3699584144367708
+    },
+    "MXTO": {
+     "ICMX": 0.21396243309256485,
+     "MMX1": 0.3022464318349268,
+     "MXTX": 0.46002089628857346,
+     "MXTO": 1.0,
+     "TOL2": 0.38139437454330866
+    },
+    "TOL2": {
+     "ICMX": 0.284328236081958,
+     "MMX1": 0.17417945075656663,
+     "MXTX": 0.36995841443677085,
+     "MXTO": 0.38139437454330866,
+     "TOL2": 0.9999999999999999
+    }
+   },
+   "regional_common_mode_std_mm": 2.6283949932440933,
+   "common_mode_removed_icmx_minus_mmx1_resid_std_mm": 4.225865287259862,
+   "icmx_minus_mmx1_resid_std_mm": 4.225865287259862,
+   "projection_coefficient_difference_ICMX_minus_MMX1": {
+    "los_e": 0.010038780318616713,
+    "los_n": -0.0021816549692716958,
+    "los_u": -0.00641247628230468
+   },
+   "los_rate_range_regional_mm_yr": [
+    -44.95681395085875,
+    -16.34247100397397
+   ]
+  },
+  "note": "Outside-AOI stations use nearest-edge incidence and are frame/common-mode diagnostics only; they do not sample the InSAR plane."
+ }
+}

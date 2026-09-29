@@ -1,0 +1,9 @@
+#!/bin/sh
+
+exec docker run --rm \
+  --platform linux/amd64 \
+  -v "$PWD":/data \
+  -v "$HOME/.cdsapirc":/home/mambauser/.cdsapirc:ro \
+  -w /data \
+  ghcr.io/insarlab/mintpy:latest \
+  "$@"

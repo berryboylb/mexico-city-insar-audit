@@ -1,0 +1,25 @@
+# Mexico City Sentinel-1 HyP3 InSAR time-series
+
+mintpy.compute.cluster = local
+mintpy.load.processor = hyp3
+
+# Interferograms
+mintpy.load.unwFile = ../hyp3/*/*_unw_phase.tif
+mintpy.load.corFile = ../hyp3/*/*_corr.tif
+
+# Geometry
+mintpy.load.demFile = ../hyp3/*/*_dem.tif
+mintpy.load.incAngleFile = ../hyp3/*/*_lv_theta.tif
+mintpy.load.waterMaskFile = ../hyp3/*/*_water_mask.tif
+
+# Limit processing to the Mexico City study area
+mintpy.subset.lalo = 19.25:19.50, -99.20:-98.95
+
+# Start with automatic referencing; we will audit reference choices later
+mintpy.reference.lalo = auto
+
+# Processing
+mintpy.networkInversion.weightFunc = var
+mintpy.troposphericDelay.method = no
+mintpy.topographicResidual = yes
+mintpy.topographicResidual.pixelwiseGeometry = yes

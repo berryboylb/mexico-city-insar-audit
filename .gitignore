@@ -1,0 +1,32 @@
+# Source radar, derived raster and weather products
+*.zip
+*.tif
+*.tiff
+*.h5
+*.hdf5
+*.grb
+*.grib
+*.grib2
+*.nc
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+.cdsapirc
+credentials.json
+*token*.txt
+
+# Generated caches and temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+*.swp
+*.tmp
+*.temp
+*.part
+*.log.tmp

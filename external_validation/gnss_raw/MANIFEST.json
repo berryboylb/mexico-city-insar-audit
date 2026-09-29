@@ -1,0 +1,60 @@
+{
+ "note": "Raw files preserved byte-for-byte as downloaded. Do not edit.",
+ "files": [
+  {
+   "file": "gnss_raw/ICMX.tenv3",
+   "source_url": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/ICMX.tenv3",
+   "retrieved": "2026-09-27 ~22:06 local (file mtime); re-checked 2026-09-27T21:14Z: server Content-Length identical",
+   "server_last_modified": "Mon, 02 Feb 2026 03:46:11 GMT",
+   "bytes": 594252,
+   "sha256": "46b4e077850b51a2e5a55a29ee01c358e5191c7dd60897fd3465060e04474259",
+   "product": "NGL final daily 24-h solutions, tenv3 ASCII, IGS20 frame; ENU in metres relative to NGL reference position; sigmas in metres"
+  },
+  {
+   "file": "gnss_raw/MMX1.tenv3",
+   "source_url": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/MMX1.tenv3",
+   "retrieved": "2026-09-27 ~22:06 local (file mtime); re-checked 2026-09-27T21:14Z: server Content-Length identical",
+   "server_last_modified": "Tue, 22 Sep 2026 10:25:33 GMT",
+   "bytes": 1203396,
+   "sha256": "835b4a167d35dbf89ce522ffc51d638ae885e65c3c05484e22dda4e552584d21",
+   "product": "NGL final daily 24-h solutions, tenv3 ASCII, IGS20 frame; ENU in metres relative to NGL reference position; sigmas in metres"
+  },
+  {
+   "file": "gnss_raw/MXTX.tenv3",
+   "source_url": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/MXTX.tenv3",
+   "retrieved": "2026-09-27 ~22:06 local (file mtime); re-checked 2026-09-27T21:14Z: server Content-Length identical",
+   "server_last_modified": "Sun, 28 Sep 2025 18:51:19 GMT",
+   "bytes": 395556,
+   "sha256": "16710cc90a5f87a5742247e9ee75f7e147e74fd684979dea52ad98b61f354972",
+   "product": "NGL final daily 24-h solutions, tenv3 ASCII, IGS20 frame; ENU in metres relative to NGL reference position; sigmas in metres"
+  },
+  {
+   "file": "gnss_raw/MXTO.tenv3",
+   "source_url": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/MXTO.tenv3",
+   "retrieved": "2026-09-27 ~22:06 local (file mtime); re-checked 2026-09-27T21:14Z: server Content-Length identical",
+   "server_last_modified": "Sun, 28 Sep 2025 18:52:58 GMT",
+   "bytes": 571608,
+   "sha256": "001ebc8ade9a291d23f208d33f4699a3da2aeb17bd281d488da983b9dc93c107",
+   "product": "NGL final daily 24-h solutions, tenv3 ASCII, IGS20 frame; ENU in metres relative to NGL reference position; sigmas in metres"
+  },
+  {
+   "file": "gnss_raw/TOL2.tenv3",
+   "source_url": "https://geodesy.unr.edu/gps_timeseries/IGS20/tenv3/IGS20/TOL2.tenv3",
+   "retrieved": "2026-09-27 ~22:06 local (file mtime); re-checked 2026-09-27T21:14Z: server Content-Length identical",
+   "server_last_modified": "Tue, 25 Aug 2026 22:31:31 GMT",
+   "bytes": 1502256,
+   "sha256": "befc02008edb72c3529b3ee45a9f6ef38041634cf5a07f147038791fde05e674",
+   "product": "NGL final daily 24-h solutions, tenv3 ASCII, IGS20 frame; ENU in metres relative to NGL reference position; sigmas in metres"
+  },
+  {
+   "file": "gnss_raw/NGL_steps.txt",
+   "source_url": "https://geodesy.unr.edu/NGLStationPages/steps.txt",
+   "retrieved": "2026-09-27T21:14:33Z",
+   "server_last_modified": "Sun, 27 Sep 2026 18:34:38 GMT",
+   "bytes": 7392824,
+   "sha256": "550ee4f3f60a9ce546dc187bd94a84d3644741207ad2e95b3de3cc1e985da9fa",
+   "product": "NGL potential-discontinuity database: code 1 = equipment/metadata change, code 2 = earthquake within influence radius",
+   "http_headers_file": "gnss_raw/NGL_steps.http_headers.txt"
+  }
+ ]
+}

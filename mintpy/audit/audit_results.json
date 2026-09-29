@@ -1,0 +1,243 @@
+{
+  "dates": [
+    "20240113",
+    "20240125",
+    "20240206",
+    "20240218",
+    "20240301",
+    "20240313",
+    "20240325",
+    "20240406",
+    "20240418",
+    "20240430",
+    "20240512",
+    "20240629",
+    "20240804",
+    "20240816",
+    "20240828",
+    "20240909",
+    "20240921",
+    "20241003",
+    "20241015",
+    "20241027",
+    "20241108",
+    "20241120",
+    "20241202",
+    "20241214",
+    "20241226"
+  ],
+  "common_mask_pixels": 80837,
+  "dem_error_elevation_corr": 0.5621553761435859,
+  "cases": {
+    "A_raw": {
+      "valid_pixels": 80836,
+      "min_m_per_yr": -0.1526527851819992,
+      "p05_m_per_yr": -0.05809600558131933,
+      "median_m_per_yr": 0.14698055386543274,
+      "p95_m_per_yr": 0.2045414000749588,
+      "max_m_per_yr": 0.24745726585388184,
+      "east_gradient_mm_per_yr_per_km": -11.747689083609735,
+      "north_gradient_mm_per_yr_per_km": -2.895212940565512,
+      "plane_r2": 0.6442680102625697,
+      "velocity_elevation_corr": 0.4264123592601532,
+      "dem_error_elevation_corr": 0.5621553761435859,
+      "baseline_diff_median_mm_per_yr": 0.7421821355819702,
+      "baseline_diff_rmse_mm_per_yr": 0.9746216237545013,
+      "baseline_diff_p05_mm_per_yr": 0.08788518607616425,
+      "baseline_diff_p95_mm_per_yr": 1.6494505107402802,
+      "baseline_diff_max_abs_mm_per_yr": 4.600156098604202
+    },
+    "B_topo": {
+      "valid_pixels": 80836,
+      "min_m_per_yr": -0.15245358645915985,
+      "p05_m_per_yr": -0.05842701904475689,
+      "median_m_per_yr": 0.14620889723300934,
+      "p95_m_per_yr": 0.20334642753005028,
+      "max_m_per_yr": 0.24571673572063446,
+      "east_gradient_mm_per_yr_per_km": -11.722818324076794,
+      "north_gradient_mm_per_yr_per_km": -2.840378298677011,
+      "plane_r2": 0.6424547588960913,
+      "velocity_elevation_corr": 0.4245454854477399,
+      "dem_error_elevation_corr": 0.5621553761435859,
+      "baseline_diff_median_mm_per_yr": 0.0,
+      "baseline_diff_rmse_mm_per_yr": 0.0,
+      "baseline_diff_p05_mm_per_yr": 0.0,
+      "baseline_diff_p95_mm_per_yr": 0.0,
+      "baseline_diff_max_abs_mm_per_yr": 0.0
+    },
+    "C_raw_linearRamp": {
+      "valid_pixels": 80836,
+      "min_m_per_yr": -0.19924983382225037,
+      "p05_m_per_yr": -0.06914426386356354,
+      "median_m_per_yr": 0.009509270079433918,
+      "p95_m_per_yr": 0.1151448730379343,
+      "max_m_per_yr": 0.192729189991951,
+      "east_gradient_mm_per_yr_per_km": 1.2468769845406027e-06,
+      "north_gradient_mm_per_yr_per_km": 2.6012409957308367e-07,
+      "plane_r2": -6.108001326943224e-08,
+      "velocity_elevation_corr": -0.009015172757486612,
+      "dem_error_elevation_corr": 0.5621553761435859,
+      "baseline_diff_median_mm_per_yr": -101.44256055355072,
+      "baseline_diff_rmse_mm_per_yr": 122.65089154243469,
+      "baseline_diff_p05_mm_per_yr": -210.26789397001266,
+      "baseline_diff_p95_mm_per_yr": 23.128939792513847,
+      "baseline_diff_max_abs_mm_per_yr": 250.8203089237213
+    },
+    "D_topo_linearRamp": {
+      "valid_pixels": 80836,
+      "min_m_per_yr": -0.20018263161182404,
+      "p05_m_per_yr": -0.06909874454140663,
+      "median_m_per_yr": 0.009417762979865074,
+      "p95_m_per_yr": 0.11504721641540527,
+      "max_m_per_yr": 0.19279472529888153,
+      "east_gradient_mm_per_yr_per_km": 2.588986583360641e-07,
+      "north_gradient_mm_per_yr_per_km": -1.5752530422060705e-07,
+      "plane_r2": 1.8784113042791262e-08,
+      "velocity_elevation_corr": -0.009771840165061302,
+      "dem_error_elevation_corr": 0.5621553761435859,
+      "baseline_diff_median_mm_per_yr": -101.42411291599274,
+      "baseline_diff_rmse_mm_per_yr": 122.65386432409286,
+      "baseline_diff_p05_mm_per_yr": -210.30601114034653,
+      "baseline_diff_p95_mm_per_yr": 22.967277094721794,
+      "baseline_diff_max_abs_mm_per_yr": 251.23938918113708
+    },
+    "E_raw_quadraticRamp_exploratory": {
+      "valid_pixels": 80836,
+      "min_m_per_yr": -0.2530183494091034,
+      "p05_m_per_yr": -0.08636370301246643,
+      "median_m_per_yr": -0.006628275383263826,
+      "p95_m_per_yr": 0.0915212370455265,
+      "max_m_per_yr": 0.18776606023311615,
+      "east_gradient_mm_per_yr_per_km": 1.0243587940955158e-06,
+      "north_gradient_mm_per_yr_per_km": -2.3343079456023117e-06,
+      "plane_r2": 4.511674811524813e-09,
+      "velocity_elevation_corr": 0.08725245253348288,
+      "dem_error_elevation_corr": 0.5621553761435859,
+      "baseline_diff_median_mm_per_yr": -125.60343742370605,
+      "baseline_diff_rmse_mm_per_yr": 137.9164159297943,
+      "baseline_diff_p05_mm_per_yr": -218.30299496650696,
+      "baseline_diff_p95_mm_per_yr": 19.512325525283813,
+      "baseline_diff_max_abs_mm_per_yr": 232.00947046279907
+    },
+    "E_topo_quadraticRamp_exploratory": {
+      "valid_pixels": 80836,
+      "min_m_per_yr": -0.25388380885124207,
+      "p05_m_per_yr": -0.08634113147854805,
+      "median_m_per_yr": -0.00671928096562624,
+      "p95_m_per_yr": 0.09128905460238457,
+      "max_m_per_yr": 0.18756648898124695,
+      "east_gradient_mm_per_yr_per_km": -1.1466702016387022e-06,
+      "north_gradient_mm_per_yr_per_km": -3.2967696975961537e-06,
+      "plane_r2": 5.981564343837675e-08,
+      "velocity_elevation_corr": 0.08712841109867892,
+      "dem_error_elevation_corr": 0.5621553761435859,
+      "baseline_diff_median_mm_per_yr": -125.70202350616455,
+      "baseline_diff_rmse_mm_per_yr": 137.93925940990448,
+      "baseline_diff_p05_mm_per_yr": -218.19765120744705,
+      "baseline_diff_p95_mm_per_yr": 19.487531390041113,
+      "baseline_diff_max_abs_mm_per_yr": 232.06138610839844
+    }
+  },
+  "reference_patches": {
+    "north_existing": {
+      "center_y": 7,
+      "center_x": 186,
+      "y_min": 3,
+      "y_max_inclusive": 11,
+      "x_min": 182,
+      "x_max_inclusive": 190,
+      "center_easting_m": 493640.0,
+      "center_northing_m": 2155640.0,
+      "valid_pixels": 80,
+      "mean_elevation_m": 2223.94873046875,
+      "median_elevation_m": 2224.0888671875
+    },
+    "west_high_terrain": {
+      "center_y": 152,
+      "center_x": 4,
+      "y_min": 148,
+      "y_max_inclusive": 156,
+      "x_min": 0,
+      "x_max_inclusive": 8,
+      "center_easting_m": 479080.0,
+      "center_northing_m": 2144040.0,
+      "valid_pixels": 81,
+      "mean_elevation_m": 2318.669189453125,
+      "median_elevation_m": 2317.896728515625
+    },
+    "southwest_high_terrain": {
+      "center_y": 341,
+      "center_x": 4,
+      "y_min": 337,
+      "y_max_inclusive": 345,
+      "x_min": 0,
+      "x_max_inclusive": 8,
+      "center_easting_m": 479080.0,
+      "center_northing_m": 2128920.0,
+      "valid_pixels": 81,
+      "mean_elevation_m": 2649.150634765625,
+      "median_elevation_m": 2645.677001953125
+    }
+  },
+  "reference_tests": {
+    "north_existing": {
+      "subtracted_patch_mean_m_per_yr": -0.0007293647504411638,
+      "rereferenced_median_m_per_yr": 0.1469382643699646,
+      "east_gradient_mm_per_yr_per_km": -11.722818448865173,
+      "north_gradient_mm_per_yr_per_km": -2.8403783327005003,
+      "local_patch_rates_m_per_yr": {
+        "north_existing": -4.6566129424663316e-11,
+        "west_high_terrain": 0.20472827553749084,
+        "southwest_high_terrain": 0.2065144032239914
+      }
+    },
+    "west_high_terrain": {
+      "subtracted_patch_mean_m_per_yr": 0.20399892330169678,
+      "rereferenced_median_m_per_yr": -0.05779002606868744,
+      "east_gradient_mm_per_yr_per_km": -11.72281832174964,
+      "north_gradient_mm_per_yr_per_km": -2.840378298330017,
+      "local_patch_rates_m_per_yr": {
+        "north_existing": -0.20472827553749084,
+        "west_high_terrain": -1.858045983738066e-08,
+        "southwest_high_terrain": 0.001786119188182056
+      }
+    },
+    "southwest_high_terrain": {
+      "subtracted_patch_mean_m_per_yr": 0.20578502118587494,
+      "rereferenced_median_m_per_yr": -0.0595761239528656,
+      "east_gradient_mm_per_yr_per_km": -11.722818308736498,
+      "north_gradient_mm_per_yr_per_km": -2.8403782956781445,
+      "local_patch_rates_m_per_yr": {
+        "north_existing": -0.2065143883228302,
+        "west_high_terrain": -0.001786116510629654,
+        "southwest_high_terrain": 2.133993426411962e-08
+      }
+    }
+  },
+  "bridge_interferograms": {
+    "20240512_20240629": {
+      "valid_pixels": 80762,
+      "valid_fraction_pct": 70.9471686842244,
+      "connected_valid_regions": 2,
+      "largest_region_fraction_of_valid": 0.9999876179391298,
+      "east_phase_gradient_rad_per_km": 0.347736317291097,
+      "north_phase_gradient_rad_per_km": 0.10868829316938577,
+      "plane_r2": 0.6318633294710988,
+      "adjacent_jump_p95_rad": 0.4813562393188475,
+      "adjacent_jump_p99_rad": 1.8721550369262747,
+      "adjacent_jump_max_rad": 9.22680377960205
+    },
+    "20240629_20240804": {
+      "valid_pixels": 80579,
+      "valid_fraction_pct": 70.78640827872165,
+      "connected_valid_regions": 3,
+      "largest_region_fraction_of_valid": 0.9999751796373745,
+      "east_phase_gradient_rad_per_km": 0.3656634725262964,
+      "north_phase_gradient_rad_per_km": 0.015159269626057138,
+      "plane_r2": 0.6965086627936801,
+      "adjacent_jump_p95_rad": 0.44717445373535114,
+      "adjacent_jump_p99_rad": 2.013375606536868,
+      "adjacent_jump_max_rad": 8.231988906860352
+    }
+  }
+}
