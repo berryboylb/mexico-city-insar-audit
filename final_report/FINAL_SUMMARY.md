@@ -39,13 +39,7 @@ A common processing step, linear-ramp removal, simply subtracts a best-fit tilte
 
 **Resolved:**
 
-1. **Bibliography.** `MANUSCRIPT_DRAFT.md` now gives in-text citations and full, DOI-checked entries for:
-   - MintPy (Yunjun et al., 2019);
-   - HyP3 (Hogenson et al., 2020);
-   - PyAPS (Jolivet et al., 2011, 2014);
-   - ERA5 (Hersbach et al., 2020);
-   - NGL (Blewitt et al., 2018);
-   - DEM-error correction (Fattahi & Amelung, 2013).
+1. **Bibliography.** `MANUSCRIPT_DRAFT.md` now gives checked in-text citations and references for Sentinel-1, HyP3, SBAS and MintPy, phase closure, DEM-error correction, PyAPS and ERA5, NGL GNSS processing, LOS projection, and prior Mexico City research. Research papers are distinguished from official dataset and software documentation. `REFERENCE_AUDIT.md` maps each source to the claim it supports and records its DOI or official URL. Project-specific results continue to cite preserved local records.
 
    Acknowledgements add the HyP3 README product and version credit, the Copernicus DEM credit, and GNSS station-provider attribution (INEGI RGNA for ICMX and TOL2; NOAA NGS CORS for MMX1). §3.3 now describes our own closure diagnostic and states that no closure-based correction was run.
 2. **Station location map.** `fig_station_locations.png`/`.pdf` (Figure 7) come with a reproducible script, `make_fig_station_locations.py`. The script checks the station pixels and patch medians against the recorded results.
