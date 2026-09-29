@@ -17,15 +17,15 @@ A common processing step, linear-ramp removal, simply subtracts a best-fit tilte
 2. **Removing the ramp proves nothing by itself.** Subtracting a plane always removes the plane. That says nothing about whether the plane was an error or real motion.
 3. **The reference point sets the zero level, not the pattern.** Moving it shifts every value by about 205–208 mm/yr but leaves every difference between two places unchanged. It cannot confirm or refute the gradient.
 4. **The GNSS stations side with "no ramp" on the one line they can test.** Two GPS stations inside the scene, ICMX (west) and MMX1 (east, about 11 km apart), measured a difference of about 256 mm/yr in the satellite's viewing direction between April and October 2024. Over the same period:
-   - without ramp removal, the radar gives about 240 mm/yr (redundant network) or 234 mm/yr (with ERA5); these agree, or nearly agree, within the uncertainty;
-   - with ramp removal, it gives about 98–100 mm/yr; this is roughly 157 mm/yr too small, about ten times the uncertainty.
+   - without ramp removal, the radar gives about 240 mm/yr (redundant network) or 234 mm/yr (with ERA5); the first lies within the study-defined comparison envelope and the second is borderline;
+   - with ramp removal, it gives about 98–100 mm/yr; this is roughly 157 mm/yr too small, about ten times the selected comparison envelope. That envelope does not quantify all station errors.
 5. **The agreement is not perfect.** Even without ramp removal, the radar under-estimates the GNSS contrast by 16–22 mm/yr.
 
 ## What this contributes
 
 - A traceable audit that ranks processing sensitivities for this dataset.
 - A clear separation of choices that shift the zero level (reference) from those that change spatial patterns (ramp).
-- A reference-independent GNSS test showing that routine linear-ramp removal would erase an independently observed contrast between these two stations.
+- A reference-independent GNSS test showing that linear-ramp removal substantially reduces the measured contrast along this one baseline, conditional on GNSS station quality.
 
 ## Limits
 
@@ -57,11 +57,12 @@ A common processing step, linear-ramp removal, simply subtracts a best-fit tilte
 
 **Still open:**
 
-1. **Mexico City literature.** No supplied source supports a citation for prior Mexico City subsidence and InSAR literature, so it is still marked `[REF MISSING]`. A Sentinel-1 mission-description paper is also not cited (optional; the data credit is given).
-2. **Operators of MXTX and MXTO** have not been identified. These two stations are regional diagnostics only.
-3. **Case-label harmonization.** Stage reports reuse the letters A–F with different meanings. The §3.2 mapping table must go into any supplement, and Figure S1's tick labels use the audit-stage word "baseline".
-4. **Unresolved gradient discrepancy.** The chain's east–west gradient is reported as −11.7228 in one place and −11.7057 mm/yr/km in another. Different fitting masks are a plausible explanation, but this was not recomputed and does not affect the conclusion.
-5. **ERA5 consistency check not re-executable.** The 3.2 mm check was run as an inline command whose code was not preserved and is not used as release evidence.
+1. **Operators of MXTX and MXTO** have not been identified. These two stations are regional diagnostics only.
+2. **Case-label harmonization.** Stage reports reuse the letters A–F with different meanings. The §3.2 mapping table must go into any supplement, and Figure S1's tick labels use the audit-stage word "baseline".
+3. **Unresolved gradient discrepancy.** The chain's east–west gradient is reported as −11.7228 in one place and −11.7057 mm/yr/km in another. Different fitting masks are a plausible explanation, but this was not recomputed and does not affect the conclusion.
+4. **ERA5 consistency check not re-executable.** The 3.2 mm check was run as an inline command whose code was not preserved and is not used as release evidence.
+
+The manuscript now cites a publisher-verified Mexico City subsidence study (Chaussard et al., 2021) and the Sentinel-1 mission paper (Torres et al., 2012) as background. Neither paper validates this project's 2024 measurements.
 
 ## Optional future experiments (outside the current scope)
 

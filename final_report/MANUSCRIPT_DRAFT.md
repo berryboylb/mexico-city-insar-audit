@@ -1,6 +1,6 @@
 # Reference and Ramp Sensitivity in a Mexico City Sentinel-1 InSAR Time Series: A Processing Audit with Sparse GNSS Validation
 
-*Draft manuscript, 2026-09-28. Every number is traced to an existing project file using the notation* `[S: path → table/key]`. *All paths are relative to the project root. Literature is cited author–year. Each entry was taken from a supplied project source (the HyP3 product README, the MintPy 1.6.4 documentation and CLI reference text in the processing image, or `external_validation/DATA_AVAILABILITY.md`) and its DOI checked against Crossref/DataCite metadata on 2026-09-28. Citations that no supplied source supports remain marked* **[REF MISSING: …]** *and have not been filled from memory.*
+*Draft manuscript, updated 2026-09-29. Project numerical results are traced to existing files using* `[S: path → table/key]` *relative to the project root. Literature is cited author–year. The Mexico City and Sentinel-1 contextual references were checked against their publishers; they do not verify this project's numerical results.*
 
 ---
 
@@ -33,6 +33,8 @@ GNSS therefore favors no-ramp processing along this one mostly east–west basel
 ---
 
 ## 1. Research question
+
+Earlier leveling, InSAR and GPS work documents substantial land subsidence in Mexico City (Chaussard et al., 2021). That regional history motivates this audit, but the present 2024 descending-LOS result must be evaluated on its own terms. The Sentinel-1 mission is described by Torres et al. (2012).
 
 The primary question is: **does independent evidence favor the original long-wavelength InSAR gradient (no ramp removal) or the linear-ramp-removed result?**
 
@@ -356,6 +358,11 @@ Any figure showing these data or products derived from them (Figures 1–3, 5–
 
 ### Literature and software
 
+- Chaussard, E., Havazli, E., Fattahi, H., Cabral-Cano, E., & Solano-Rojas, D. (2021). Over a century of sinking in Mexico City: No hope for significant elevation and storage capacity recovery. *Journal of Geophysical Research: Solid Earth*. https://doi.org/10.1029/2020JB020648
+  - *Source:* publisher record; contextual prior Mexico City research, not evidence for this study's 2024 velocity estimates.
+- Torres, R., Snoeij, P., Geudtner, D., Bibby, D., Davidson, M., et al. (2012). GMES Sentinel-1 mission. *Remote Sensing of Environment, 120*, 9–24. https://doi.org/10.1016/j.rse.2011.05.028
+  - *Source:* publisher record; mission description in §1. The HyP3 data credit is separately given in Acknowledgements.
+
 Every entry comes from a supplied source, listed in brackets. Each DOI was resolved against Crossref (DataCite for Zenodo) on 2026-09-28, and authors, year, title, volume and pages match that metadata.
 
 - Blewitt, G., Hammond, W. C., & Kreemer, C. (2018). Harnessing the GPS data explosion for interdisciplinary science. *Eos, 99*. https://doi.org/10.1029/2018EO104623
@@ -401,8 +408,6 @@ URLs as recorded in `external_validation/DATA_AVAILABILITY.md` and `source_inven
 11. ASF. Sentinel-1 InSAR Product Guide. https://hyp3-docs.asf.alaska.edu/guides/insar_product_guide/ (as given in the HyP3 README).
 12. Copernicus DEM (COP-DEM) collection description. https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM (as given in the HyP3 README and DEM metadata).
 
-### Still missing (no supplied source supports a citation; none invented)
+### Remaining attribution gap
 
-- **[REF MISSING: prior Mexico City subsidence and InSAR literature]** No project file supplies a peer-reviewed Mexico City subsidence reference. The only Mexico-related entry in the MintPy list, Chaussard et al. (2013), concerns volcanic systems, not Mexico City subsidence, and was judged not relevant.
-- **[REF MISSING: Sentinel-1 mission description paper — optional]** The data credit required by the product README is given under Acknowledgements. No mission-description paper was supplied.
 - **[OPERATOR UNATTRIBUTED: MXTX, MXTO]** The station operators were not investigated (`gnss_station_inventory.csv` → `raw_rinex_status` = `not_investigated`).

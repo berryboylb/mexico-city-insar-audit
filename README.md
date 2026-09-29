@@ -17,6 +17,7 @@ U95 in the comparison is a study-defined envelope combining an AR(1)-adjusted st
 3. [Figure index](final_report/FIGURE_INDEX.md) — captions and limits for every cited figure.
 4. [ERA5 metadata provenance note](final_report/PROVENANCE_NOTE_ERA5_METADATA.md) — why the load-time `method = no` attribute persists in ERA5-corrected HDF5 products.
 5. [Final summary](final_report/FINAL_SUMMARY.md) — short account and remaining reporting discrepancies.
+6. [Release checks and storage cleanup](docs/REPRODUCIBILITY_AND_STORAGE.md) — what is independently checkable and how to reduce local disk use after verifying an archive.
 
 Earlier diagnostic reports under `mintpy/audit/`, `mintpy_redundant/audit/`, `mintpy_redundant_era5/audit/`, and `external_validation/` document their respective stages. Their interpretation and figure verdicts are **historical** where they conflict with the manuscript. In particular, both original mid-year chain “bridge” interferograms belong to tested closure triangles in the expanded network. Those triangles do not identify a uniquely faulty edge or validate all other links.
 
@@ -48,6 +49,8 @@ Packaging changed only release copies of documentation and normalized CRLF to LF
 - Case letters A–F were reused across stages; the manuscript §3.2 maps them. Supplementary Figure S1 retains the audit-stage word “baseline” in tick labels.
 - `median(pixelwise B − A)` is about **−101.984** mm/year, while `median(B) − median(A)` is about **−137.430** mm/year. They answer different questions.
 - The ERA5 HDF5 `mintpy.troposphericDelay.method = no` attribute records the load-time configuration and is not an ERA5 processing verdict.
-- No supported Mexico City subsidence literature citation was present in the supplied sources; the manuscript marks this reference gap rather than inventing a citation.
+- Prior Mexico City subsidence work and the Sentinel-1 mission are now cited in the manuscript for context. Those papers are independent background sources, not validation of this 2024 result.
 
 No license has been selected for this release.
+
+Run `python3 scripts/verify_release.py` to check the released numerical tables and recompute the matched GNSS rate from the included cleaned daily positions. This does not rerun the satellite inversion or original GNSS processing.
